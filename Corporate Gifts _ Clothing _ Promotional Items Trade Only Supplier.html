@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://www.amrod.co.za/# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="https://www.amrod.co.za/">--><base href=".">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"81af28cf3a","applicationID":"321119775","transactionName":"ZFJXY0dQDUMEWkYNWV0YdGRlHgdVA1hHCEIdVkZHTQ==","queueTime":0,"applicationTime":77,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VgIDU1ZSDRADVlBTBggAUVE=",licenseKey:"81af28cf3a",applicationID:"321119775"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(27),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(28),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(10),t(9),"addEventListener"in window&&t(6),c.xhrWrappable&&t(11),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function i(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+l])try{window.performance[h](m,i,!1)}catch(t){}else try{window.performance[h]("webkit"+m,i,!1)}catch(t){}}function o(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(10),f=t(9),u=t(5),d=t(19),l="learResourceTimings",p="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",S=t("loader");if(!S.disabled){S.features.stn=!0,t(8),"addEventListener"in window&&t(6);var O=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof O&&(this.bstStart=S.now())}),a.on(b,function(t,e){var n=t[0];n instanceof O&&s("bst",[n,e,this.bstStart,S.now()])}),c.on(x,function(t,e,n){this.bstStart=S.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),this.bstType])}),f.on(x,function(){this.bstStart=S.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=S.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):p in window.performance&&(window.performance["c"+l]?window.performance[p](m,i,d(!1)):window.performance[p]("webkit"+m,i,d(!1))),document[p]("scroll",o,d(!1)),document[p]("keypress",o,d(!1)),document[p]("click",o,d(!1))}}},{}],5:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(28),a=t(27);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],10:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],11:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function o(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,S.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=t(19),p=NREUM.o,h=p.XHR,m=p.MO,v=p.PR,w=p.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,l(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,S=document.createTextNode(R);new m(a).observe(S,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],12:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(w.traceContextParentHeader=i(h,m),w.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(24),h=t(14);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],13:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function i(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(14),f=t(12).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(20),m=t(18),v=t(15),w=t(19),g=t(21).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(11),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;if("string"==typeof o?n=o:"object"==typeof o&&o instanceof y?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n),"data"!==this.params.protocol){var s=(""+(o&&o instanceof y&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],14:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],15:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(18);e.exports=r},{}],16:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),o(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(27),s=t(28),c=t("ee").get("tracer"),f=t("loader"),u=t(21),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var l=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(l,function(t,e){d[e]=i(p,e,!0,"api")}),d.addPageAction=i(p,"addPageAction",!0),d.setCurrentRouteName=i(p,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),o("err",[t,f.now(),!1,e])}},{}],17:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],20:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[s,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:i}},{}],22:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(29);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],23:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var i=[r],o=a({});o&&i.push(o),p("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,l,p=t("handle"),h=t("loader"),m=t(26),v=t(19),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}l=new PerformanceObserver(o);try{l.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],24:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(t)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],25:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],26:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(19);e.exports=r;var o,a,s;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],27:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],28:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],29:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||i(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(27),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!O++){var t=S.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+S.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){s("mark",["domContent",a()+S.offset],null,"api")}var a=t(22),s=t("handle"),c=t(27),f=t("ee"),u=t(25),d=t(17),l=t(19),p=d.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!1;NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),S=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(16),t(23),m[v]?(m[v]("DOMContentLoaded",o,l(!1)),h[v]("load",r,l(!1))):(m[w]("onreadystatechange",i),h[w]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var O=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(28),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,13,4,3]);</script><![endif]-->
+<title>
+	Corporate Gifts | Clothing | Promotional Items Trade Only Supplier
+</title><meta name="description" content="Africa&#39;s leading importer and brander of Corporate Clothing, Corporate Gifts, Promotional Gifts, Promotional Clothing and Headwear"><meta name="keywords" content="Corporate Clothing,Promotional Clothing,Corporate Gifts,gifts,promotional,printing,Promotional Gifts,Branding,Clothing,Corporate,Catalogue,Products,Toolbox,Caps,marketing"><meta name="google-play-app" content="app-id=com.telerik.AmrodApp"><meta name="apple-itunes-app" content="app-id=690447585">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="https://d33yj9nw58rehz.cloudfront.net/images/icons/favicon.ico">
+
+<script type="text/javascript" async="" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/dc.js"></script><script type="text/javascript" async="" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/tracking.js"></script><script async="" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/js" type="text/javascript"></script>
+<script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GMKVBQHX65');
+    </script>
+
+
+
+
+<link rel="stylesheet" href="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/fontface.min.css"><link rel="stylesheet" href="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"><link rel="stylesheet" href="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/bundle119.min.css"><link rel="stylesheet" href="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/home12.min.css">
+<script src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/vendor.bundle1.1.min.js" type="text/javascript"></script>
+<script src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/orderDelivery.bundle13.min.js" type="text/javascript"></script>
+<script src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/dynamicAccount-bundle5.min.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script type="text/javascript">
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:1411856,hjsv:6};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+<script async="true" id="pixel-script-poptin" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/pixel.js" type="text/javascript"></script>
+<script async="" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/hotjar-1411856.js"></script><script type="text/javascript" id="poptin_jQuery" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/jquery.min.js" async="true"></script><link rel="preconnect" id="poptin_cloudflare" href="https://cdnjs.cloudflare.com/"><link rel="preconnect" id="poptin_css_link" href="https://display.popt.in/"><script async="" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/modules.80fb5595e83467a2ce64.js" charset="utf-8"></script></head>
+<body data-spy="scroll" data-target=".subNavMenu" data-offset="50" data-new-gr-c-s-check-loaded="14.1114.0" data-gr-ext-installed="" style="">
+
+
+
+<form name="ctl01" method="post" action="https://www.amrod.co.za/" id="ctl01" data-gtm-form-interact-id="0">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATEGUID__" id="__VIEWSTATEGUID__" value="lrp11p2iptez3y3ongy1drxj\638241157489560225">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl01'];
+if (!theForm) {
+    theForm = document.ctl01;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-login">
+<div id="ctl15_pnlFullLogin" class="modal-content">
+<div id="loginFields">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+<h3 class="modal-title">Customer Login</h3>
+<a href="https://www.amrod.co.za/Register.aspx">Don't have an account? Click here to register.</a>
+</div>
+<div id="loginError" class="alert alert-danger" role="alert"></div>
+<div class="modal-body">
+<div class="form-horizontal">
+<div class="form-group ">
+<input type="text" id="txtLoginEmail" class="form-control" placeholder="Email" data-gtm-form-interact-field-id="0">
+</div>
+<div class="form-group">
+<input type="password" id="txtLoginPassword" class="form-control" placeholder="Password" data-gtm-form-interact-field-id="1">
+</div>
+<div class="checkbox" style="display:none;">
+<input type="checkbox" id="cbLoginRememberMe">
+<label for="cbLoginRememberMe">Stay logged in</label>
+</div>
+<a href="javascript:LoginClick()" class="btn btn-inline blue">Login</a>
+</div>
+</div>
+<div class="modal-footer">
+<ul class="list-inline">
+<li><a href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; ForgotPassword()"><span style="color:#373737">Forgot your password?</span> Click here</a></li>
+</ul>
+</div>
+</div>
+<div id="selectAccount" style="display:none;">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+<h3 class="modal-title">Customer Login</h3>
+<p>Your login details are linked to the below accounts, please select the account you would like to access.</p>
+</div>
+<div class="modal-body">
+<div class="form-horizontal form-mixed">
+<div class="form-group">
+<label for="Main_txtProductName" class="col-ms-3 col-sm-3 control-label">Email:</label>
+<div class="col-ms-9 col-sm-9 text-left">
+<span id="lblLoginEmail" class="mixed-label"></span>
+</div>
+</div>
+<div class="form-group">
+<label for="Main_txtProductName" class="col-ms-3 col-sm-3 control-label">Account:</label>
+<div class="col-ms-9 col-sm-9 text-left">
+<select id="ddlLoginAccounts" class="form-control login-account-select"></select>
+</div>
+</div>
+<div class="visible-ms visible-sm visible-md visible-lg col-ms-3 col-sm-3">&nbsp;</div>
+<div class="col-ms-9 col-sm-9">
+<a id="btnLoginSelectedAccount" class="btn btn-inline blue">Login</a>
+</div>
+</div>
+</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-exclamation-circle"></i>Logging into the master account will allow access to all orders and related information.</div>
+</div>
+<div id="passwordReminder" style="display:none;">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+<h3 class="modal-title">Password Reminder</h3>
+<p>Please enter your email address and click the submit button. Your password will be emailed to you.</p>
+</div>
+<div id="passRemindererror" class="alert alert-danger" role="alert"></div>
+<div class="modal-body">
+<div class="form-horizontal form-mixed">
+<div class="row">
+<div class="col-ms-8 col-sm-8 form-reset-control">
+<input name="ctl15$txtPassReminder" type="text" id="txtPassReminder" class="form-control" placeholder="Email">
+</div>
+<div class="col-ms-4 col-sm-4 form-reset-btn">
+<a href="javascript:RequestPassReminder()" class="btn btn-inline blue">Submit</a>
+</div>
+</div>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="searchByPage" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-login">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+<h3 class="modal-title">Search By Catalogue Page</h3>
+</div>
+<div class="modal-body">
+<div class="form-horizontal">
+<div class="form-group ">
+<select id="ddlCatalogue" class="form-control chosen-select hidden-xs hidden-sm" style="display: none;">
+<option value="0">Select catalogue</option>
+<option value="1">Gifts Catalogue</option>
+<option value="2">Clothing and Headwear Catalogue</option>
+</select><div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: 0px;" title="" id="ddlCatalogue_chosen"><a class="chosen-single" tabindex="-1"><span>Select catalogue</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chosen-results"></ul></div></div>
+</div>
+<div class="form-group ">
+<input type="text" id="txtsearchPageNumber" class="form-control" placeholder="Page Number">
+</div>
+<a href="javascript:SearchPageNumber()" class="btn btn-inline blue">Search</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<header role="banner" class="homepage">
+<nav class="navbar navbar-default navbar-top" role="navigation">
+<div class="container topLinkContainer">
+<ul class="nav navbar-nav hidden-xs hidden-sm topnavlinks">
+<li><a href="https://www.amrod.co.za/About.aspx" class="first-top">About Us</a></li>
+<li><a href="https://www.amrod.co.za/ALP.aspx">Loyalty Programme</a></li>
+<li class="dropdown default-dropdown contact-dropdown">
+<a href="https://www.amrod.co.za/Contact.aspx" class="dropdown-toggle ContactDD" data-toggle="dropdown" role="button">
+<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Contact Us
+</a>
+<ul class="dropdown-menu" role="menu">
+<li class="header">Contact:</li>
+<li><a href="https://www.amrod.co.za/Contact.aspx#joburg">Amrod Johannesburg Head Office</a></li>
+<li><a href="https://www.amrod.co.za/Contact.aspx#pta">Amrod Pretoria</a></li>
+<li><a href="https://www.amrod.co.za/Contact.aspx#cpt">Amrod Cape Town</a></li>
+<li><a href="https://www.amrod.co.za/Contact.aspx#durban">Amrod Durban</a></li>
+<li><a href="https://www.amrod.co.za/Contact.aspx#pe">Amrod Port Elizabeth</a></li>
+<li><a href="https://www.amrod.co.za/Contact.aspx#bloemfontein">Amrod Bloemfontein</a></li>
+<li><a href="https://www.amrod.co.za/Contact.aspx#namibia">Amrod Namibia</a></li>
+<li><a href="https://www.amrod.co.za/Contact.aspx#botswana">Amrod Botswana</a></li>
+<li><a href="https://www.amrod.co.za/Contact.aspx#kenya">Amrod Kenya</a></li>
+<li><a href="https://www.amrod.co.za/Contact.aspx#zambia">Amrod Zambia</a></li>
+<li><a href="https://www.amrod.co.za/Contact.aspx#nigeria">Amrod Nigeria</a></li>
+<li><a>086-11-amrod</a></li>
+</ul>
+</li>
+<li id="lnkReseller" class="dropdown default-dropdown">
+<a href="https://www.amrod.co.za/#" class="dropdown-toggle" data-toggle="dropdown" role="menu" style="background-color:rgba(255, 255, 255, 0.00);"><span id="aReseller">Reseller Tools</span>
+<i class="fa fa-angle-down" aria-hidden="true" style="font-size:13px"></i>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li id="lnkDashboard" class="rToolMenuItem"><a href="https://www.amrod.co.za/Dashboard.aspx">My Dashboard</a></li>
+<li id="liBarometer" class="rToolMenuItem"><a href="https://www.amrod.co.za/SpendBarometer.aspx">Barometer</a></li>
+<li id="liBrandWebsite" class="dropdown-toggle rToolMenuItem">
+<a id="lnkBrandWebsite" href="https://www.amrod.co.za/#" class="dropdown-toggle" data-toggle="dropdown">Brand Websites<i class="fa fa-chevron-down"></i></a>
+<ul class="dropdown-menu" role="menu">
+<li><a target="_blank" href="https://altitudeworkwear.marketing.amrod.co.za/">Altitude Workwear</a></li>
+<li><a target="_blank" href="https://andycartwright.marketing.amrod.co.za/">Andy Cartwright</a></li>
+<li id="liAlexVarga"><a target="_blank" href="https://alexvarga.marketing.amrod.co.za/">Alex Varga</a></li>
+<li id="liEvaElm"><a target="_blank" href="https://evaandelm.marketing.amrod.co.za/">Eva &amp; Elm</a></li>
+<li id="liHoppla"><a target="_blank" href="https://hoppla.marketing.amrod.co.za/">Hoppla!</a></li>
+<li id="liKooshty"><a target="_blank" href="https://kooshty.marketing.amrod.co.za/">Kooshty</a></li>
+<li id="liOkiyo"><a target="_blank" href="https://okiyo.marketing.amrod.co.za/">Okiyo</a></li>
+<li id="liSlazenger"><a target="_blank" href="https://slazenger.marketing.amrod.co.za/">Slazenger</a></li>
+<li id="liSwissCougar"><a target="_blank" href="https://swisscougar.marketing.amrod.co.za/">Swiss Cougar</a></li>
+<li id="liSerendipio"><a target="_blank" href="https://serendipio.marketing.amrod.co.za/">Serendipio</a></li>
+</ul>
+</li>
+<li id="liCategoryWebsites" class="dropdown-toggle rToolMenuItem">
+<a id="lnkCategoryWebsites" href="https://www.amrod.co.za/#" class="dropdown-toggle" data-toggle="dropdown">Category Websites<i class="fa fa-chevron-down"></i></a>
+<ul class="dropdown-menu" role="menu">
+<li id="liCustompackaging"><a target="_blank" href="https://custompackaging.marketing.amrod.co.za/">Custom Packaging</a></li>
+<li id="liDisplayBrand"><a target="_blank" href="https://display.marketing.amrod.co.za/">Display Your Brand Anywhere</a></li>
+<li id="liPowerbank"><a target="_blank" href="https://marketing.amrod.co.za/landing/PowerBanks1">NRCS-Approved Power Bank Collection</a></li>
+<li id="liWinter"><a target="_blank" href="https://winter.marketing.amrod.co.za/">Winter 2023</a></li>
+</ul>
+</li>
+<li id="lnkDigitaCatalogue" class="rToolMenuItem"><a target="_blank" href="https://marketing.amrod.co.za/landing/2023DigitalCatalogues">Digital Catalogues</a></li>
+<li id="liBusinessTools" class="dropdown-toggle rToolMenuItem">
+<a id="lnkBusinessTools" href="https://www.amrod.co.za/#" class="dropdown-toggle" data-toggle="dropdown">Business Tools<i class="fa fa-chevron-down"></i></a>
+<ul class="dropdown-menu" role="menu">
+<li id="liAmrodAcademy"><a target="_blank" href="https://amrodacademy.marketing.amrod.co.za/">Amrod Academy</a></li>
+ <li id="liSalesHub"><a target="_blank" href="https://marketing.amrod.co.za/landing/SalesHub">Sales Hub</a></li>
+</ul>
+</li>
+<li id="liLogo24" class="dropdown-toggle rToolMenuItem">
+<a id="lnkLogo24" href="https://www.amrod.co.za/#" class="dropdown-toggle" data-toggle="dropdown">Logo24<i class="fa fa-chevron-down"></i></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="https://www.amrod.co.za/catalogueFilter.aspx?logo24=yes">Browse Logo24 Products</a></li>
+<li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/LOGO24-2.pdf" target="_blank">View Logo24 Explanation</a></li>
+<li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/LOGO24-TERMS-AND-CONDITIONS.pdf" target="_blank">View Logo24 Terms</a></li>
+</ul>
+</li>
+<li id="eService" class="dropdown-toggle rToolMenuItem">
+<a id="e-Services" href="https://www.amrod.co.za/#" class="dropdown-toggle" data-toggle="dropdown">e-Services <i class="fa fa-chevron-down"></i></a>
+<ul class="dropdown-menu" role="menu">
+<li id="liPromogiftSite"><a target="_blank" href="https://www.promoafrica.com/demo">Free Promo Africa Website</a></li>
+</ul>
+</li>
+<li id="Knowledgebase"><a id="Knowledge-Base" href="https://www.amrod.co.za/#" onclick="if (!window.__cfRLUnblockHandlers) return false; ShowKnowledgeBase()">Knowledge Base <i class="fa fa-chevron-down"></i></a></li>
+<li id="lnkAmrod21" class="rToolMenuItem"><a target="_blank" href="https://marketing.amrod.co.za/landing/TeamAmrodOurPeople">Team Amrod – Our People</a></li>
+</ul>
+</li>
+</ul>
+<div id="pnlCompactProfile">
+<ul id="compactProfileDropdowns" class="nav navbar-nav navbar-right dropdownhover">
+<li class="dropdown currency-select">
+<a id="lnkCurrentCurrency" href="https://www.amrod.co.za/#" class="dropdown-toggle clearfix" data-toggle="dropdown" role="button">
+<img id="ctl16_imgCurrencyFlag" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/ZAR.png" style="border-width:0px;">
+<span id="ctl16_lblCurrentCurrency" class="title">ZAR (R)</span>
+<i class="fa fa-angle-down"></i>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li id="li_ZAR">
+<a id="ctl16_LinkButton17" href="javascript:__doPostBack(&#39;ctl16$LinkButton17&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/ZAR.png" alt="ZAR (R)"><span class="title">ZAR (R)</span>
+</a>
+</li>
+<li id="li_USD">
+<a id="ctl16_LinkButton1" href="javascript:__doPostBack(&#39;ctl16$LinkButton1&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/USD.png" alt="USD ($)"><span class="title">USD ($)</span>
+</a>
+</li>
+<li id="li_GBP">
+<a id="ctl16_LinkButton2" href="javascript:__doPostBack(&#39;ctl16$LinkButton2&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/GBP.png" alt="GBP (£)"><span class="title">GBP (£)</span>
+</a>
+</li>
+<li id="li_EUR">
+<a id="ctl16_LinkButton3" href="javascript:__doPostBack(&#39;ctl16$LinkButton3&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/EUR.png" alt="EUR (€)"><span class="title">EUR (€)</span>
+</a>
+</li>
+<li id="li_JPY">
+<a id="ctl16_LinkButton4" href="javascript:__doPostBack(&#39;ctl16$LinkButton4&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/JPY.png" alt="JPY (¥)"><span class="title">JPY (¥)</span>
+</a>
+</li>
+<li id="li_AOA">
+<a id="ctl16_LinkButton7" href="javascript:__doPostBack(&#39;ctl16$LinkButton7&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/AOA.png" alt="AOA (Kz)"><span class="title">AOA (Kz)</span>
+</a>
+</li>
+<li id="li_GHS">
+<a id="ctl16_LinkButton8" href="javascript:__doPostBack(&#39;ctl16$LinkButton8&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/GHS.png" alt="GHS (GH₵)"><span class="title">GHS (GH₵)</span>
+</a>
+</li>
+<li id="li_MWK">
+<a id="ctl16_LinkButton10" href="javascript:__doPostBack(&#39;ctl16$LinkButton10&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/MWK.png" alt="MWK (MK)"><span class="title">MWK (MK)</span>
+</a>
+</li>
+<li id="li_MZN">
+<a id="ctl16_LinkButton11" href="javascript:__doPostBack(&#39;ctl16$LinkButton11&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/MZN.png" alt="MZN (MT)"><span class="title">MZN (MT)</span>
+</a>
+</li>
+<li id="li_RWF">
+<a id="ctl16_LinkButton12" href="javascript:__doPostBack(&#39;ctl16$LinkButton12&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/RWF.png" alt="RWF (RF)"><span class="title">RWF (RF)</span>
+</a>
+</li>
+<li id="li_TZS">
+<a id="ctl16_LinkButton13" href="javascript:__doPostBack(&#39;ctl16$LinkButton13&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/TZS.png" alt="TZS (x/y)"><span class="title">TZS (TSh)</span>
+</a>
+</li>
+<li id="li_UGX">
+<a id="ctl16_LinkButton14" href="javascript:__doPostBack(&#39;ctl16$LinkButton14&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/UGX.png" alt="UGX (Sh)"><span class="title">UGX (Sh)</span>
+</a>
+</li>
+<li id="li_MUR">
+<a id="ctl16_LinkButton18" href="javascript:__doPostBack(&#39;ctl16$LinkButton18&#39;,&#39;&#39;)">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/MUR.png" alt="MUR (Rs)"><span class="title">MUR (Rs)</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown default-dropdown">
+<a href="https://www.amrod.co.za/#" class="dropdown-toggle settings" data-toggle="dropdown" role="button">
+<i class="fas fa-user-circle"></i>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li class="header">My Account:
+<span id="lblUserFirstName">itumeles</span></li>
+<li><a href="https://www.amrod.co.za/UpdateContact.aspx">My Profile</a></li>
+<li id="liAddressBookManager"><a href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; deliveryAddressSelector.showPopup(2, 1);">Manage Delivery Addresses</a></li>
+<li>
+<a id="btnCompactLogOff" href="javascript:__doPostBack(&#39;btnCompactLogOff&#39;,&#39;&#39;)">Logout</a></li>
+</ul>
+</li>
+<li class="dropdown default-dropdown">
+<a href="https://www.amrod.co.za/#" class="dropdown-toggle ToggleSearchBox" data-toggle="dropdown" role="button">
+<i class="fas fa-search"></i>
+</a>
+</li>
+<li class="dropdown default-dropdown">
+<a href="https://www.amrod.co.za/#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+<i class="far fa-envelope"></i>
+</a>
+<ul class="dropdown-menu notifications-menu" role="menu">
+<li class="header">Notifications:</li>
+<li style="text-align: center;">
+<a data-target="Notifications.aspx" href="https://www.amrod.co.za/Notifications.aspx" class="dropdown-toggle" role="button">View all notifications</a>
+</li>
+</ul>
+</li>
+<li id="liMasterStdCart" class="dropdown mini-cart">
+<a id="lnkMasterStdCart" href="https://www.amrod.co.za/ViewCart.aspx" class="dropdown-toggle clearfix" data-toggle="dropdown" role="button">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/icn-cart.png" alt="Shopping Cart">
+<span class="title">Cart</span>
+<i class="fa fa-angle-down"></i>
+<span id="lblCartItemCount" class="amount">1</span>
+</a>
+<ul class="dropdown-menu mini-cart-items" role="menu">
+<li class="header">Recently added item(s)</li>
+<li class="cart-item">
+<a id="rptrCompactCart_ctl00_lnkCompactCartProductImage" class="img" href="https://www.amrod.co.za/Product.aspx?Code=DW-7270"><img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/DW-7270_260_250.jpg" alt="" style="border-width:0px;"></a>
+<div class="detail">
+<span id="rptrCompactCart_ctl00_lblCompactCartProductName" class="title">Okiyo Katagi Wheat Straw Tumbler - 450ml</span>
+<a style="display: none;" href="https://www.amrod.co.za/#" class="remove"><i class="fa fa-remove"></i></a>
+<span id="rptrCompactCart_ctl00_lblCompactCartPrice" class="price">R 52.99</span>
+<div class="listed-detail">
+<p>
+Code:
+<span id="rptrCompactCart_ctl00_lblCompactCartProductCode" class="code">DW-7270</span>
+</p>
+</div>
+</div>
+</li>
+
+<li>
+<span class="total-text">Subtotal</span>
+<span id="lblCartSubTotal" class="total-amount">R 7&nbsp;948.50</span>
+</li>
+<li class="footer">
+<a id="lnkMasterStdClearCart" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; ConfirmClearCart(&#39;standard&#39;);" class="btn btn-inline dark-grey primary">Clear Cart</a>
+<a id="lnkMasterStdViewCart" href="https://www.amrod.co.za/ViewCart.aspx?t=standard" class="btn btn-inline green-dark secondary">View Cart <i class="fa fa-chevron-right"></i></a>
+</li>
+</ul>
+</li>
+
+<li id="Logo24CompactCart" class="dropdown mini-cart">
+<a id="lnkMasterLogo24Cart" href="https://www.amrod.co.za/#" class="dropdown-toggle clearfix logo24-minicart" data-toggle="dropdown" role="button">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/logo24-cart-default.png" alt="Logo24 Cart">
+<span class="title">Cart</span>
+<i class="fa fa-angle-down"></i>
+<span id="lblLogo24CartItemCount" class="amount">0</span>
+</a>
+<ul class="dropdown-menu mini-cart-items" role="menu">
+<li class="header">Recently added Logo24 item(s)</li>
+<li>
+<span class="total-text">Subtotal</span>
+<span id="lblLogo24SubTotal" class="total-amount">R 0.00</span>
+</li>
+<li class="footer">
+<a id="lnkMasterLogo24ClearCart" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; ConfirmClearCart(&#39;logo24&#39;);" class="btn btn-inline dark-grey primary">Clear Cart</a>
+<a id="lnkMasterLogo24ViewCart" href="https://www.amrod.co.za/ViewCart.aspx?t=logo24" class="btn btn-inline green-dark secondary">View Cart <i class="fa fa-chevron-right"></i></a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="container daysLeftCounter">
+<div style="height: 15px;">
+<span id="Label1">&nbsp;</span>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="search-target">
+<div class="col-xs-12 search-bar-box">
+<div class="input-group search-mini ">
+<div class="form-group">
+<input name="txtMasterSearchBox" id="txtMasterSearchBox" class="form-control ui-autocomplete-input" placeholder="What are you looking for?" type="search" autocomplete="off">
+<span class="SpanBtnMasterSearch">
+<a id="lnkBtnMasterSearch" class="lnkMasterSearch" href="javascript:__doPostBack(&#39;lnkBtnMasterSearch&#39;,&#39;&#39;)"><i class="fas fa-search" aria-hidden="true"></i></a>
+</span>
+</div>
+</div>
+</div>
+<div class="col-lg-2">
+<a class="navbar-brand" href="https://www.amrod.co.za/">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/amrod-logo-white2.png" alt="Amrod Corporate Logo" title="Amrod">
+<span class="brand-logo-title">TRADE ONLY SUPPLIER</span>
+</a>
+</div>
+
+<div class="col-lg-10 homepageNavMenuControls">
+<nav class="navbar yamm navbar-default navbar-primary" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="if (!window.__cfRLUnblockHandlers) return false; onNavbarToggler(this)">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+</div>
+<div class="navbar-primary-wrap">
+<div id="navbar" class="navbar-collapse collapse">
+<ul class="nav navbar-nav search-mobile">
+
+<li class="dropdown yamm-fw">
+<a class="dropdown-toggle" data-toggle="dropdown">Gifts <i class="fa fa-angle-down"></i></a>
+<ul class="dropdown-menu">
+<li>
+<div class="yamm-content">
+<div class="container">
+<div class="row">
+<div class="col-sm-4 col-md-3 col-lg-3 yamm-main">
+<div class="col-lg-12 yamm-main-wrap">
+<span class="title">
+<a id="navMenuControl_navGifts" class="nmLink" href="https://www.amrod.co.za/catalogue/corporate-gifts">Categories</a>
+</span>
+<div class="row">
+<ul style="white-space: nowrap;" class="col-md-4"><li><a style="font-style: italic;" href="https://www.amrod.co.za/catalogue/corporate-gifts,2023-2024-custom-catalogues">2023-2024 Custom Catalogues</a></li><li><a style="font-style: italic;" href="https://www.amrod.co.za/catalogue/corporate-gifts,brand-new">Brand New</a></li><li><a style="font-style: italic;" href="https://www.amrod.co.za/catalogue/corporate-gifts,sets">Sets</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,awards-medals">Awards and Medals</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,bags">Bags</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,blankets">Blankets</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,coolers-outdoor">Coolers and Outdoor</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,drinkware-food">Drinkware and Food</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,awards-executive-gifts">Executive Gifts and Travel</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,folders-tablet-holders">Folders and Tablet Holders</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,golf">Golf</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,home-living">Home and Living</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,keyholders">Keyholders</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,lanyards">Lanyards</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,memory-sticks">Memory Sticks</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,mobile-technology">Mobile Technology</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,notebooks">Notebooks</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,on-road">On the Road</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,packaging-ideas">Packaging Ideas</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,pamper-gifts">Pamper Gifts</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,personal-care-pamper-gifts">Personal Care</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,promotional-giveaways">Promotional Giveaways</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,selling-tools">Selling Tools</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,sports-wellness">Sports and Wellness</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,stationery">Stationery</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,tools-torches-knives">Tools Torches and Knives</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,umbrellas">Umbrellas</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-gifts,writing-instruments">Writing Instruments</a></li><li><a style="font-style: italic;" href="https://www.amrod.co.za/catalogue/corporate-gifts,covid-19">Covid-19 Products</a></li><li><a style="color:red;font-style: italic;" href="https://www.amrod.co.za/catalogue/corporate-gifts,specials">Specials</a></li></ul>
+</div>
+</div>
+</div>
+<div class="col-sm-4 col-md-3 col-lg-3 yamm-main">
+<div class="col-lg-12 yamm-main-wrap">
+<span class="title">Brands</span>
+<div class="row">
+<ul style="white-space: nowrap;" class="col-md-4"><li><a style="" href="https://www.amrod.co.za/catalogue/brands,altitude-gifts?ct=1">Altitude</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,alex-varga?ct=1">Alex Varga</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,andy-cartwright?ct=1">Andy Cartwright</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,elleven?ct=1">Elleven</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,eva-elm?ct=1">Eva and Elm</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,gary-player-collection?ct=1">Gary Player Collection</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,hoppla?ct=1">Hoppla</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,kooshty?ct=1">Kooshty</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,moptopper?ct=1">Moptopper</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,okiyo?ct=1">Okiyo</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,slazenger?ct=1">Slazenger</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,serendipio?ct=1">Serendipio</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,swiss-cougar?ct=1">Swiss Cougar</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,us-basic?ct=1">US Basic</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,xd-design?ct=1">XD Design</a></li></ul>
+</div>
+</div>
+</div>
+<div class="col-sm-4 col-md-3 col-lg-3 yamm-main">
+<div class="col-lg-12 yamm-main-wrap">
+<span class="title" style="font-size:24px;">Themes and Collections</span>
+<div class="row">
+<ul style="white-space: nowrap;" class="col-md-4"><li><a style="" href="https://www.amrod.co.za/catalogue/collections-themes,axis-memory-stick-collection">Axis Memory Stick Collection</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/collections-themes,eco-friendly-ideas">Eco-Friendly Ideas</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/collections-themes,golf-day-ideas">Golf Day Ideas</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/collections-themes,ideas-for-kids">Ideas For Kids</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/collections-themes,ideas-for-men">Ideas For Men</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/collections-themes,ideas-for-women">Ideas For Women</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/collections-themes,top-promotional-giveaways">Top Promotional Giveaways</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/collections-themes,travel-essentials">Travel Essentials</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/collections-themes,made-in-south-africa">Made in South Africa</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/collections-themes,winter-gift-ideas">Winter Gift Ideas</a></li></ul>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-lg-3 hidden-xs hidden-sm yamm-side">
+<span class="title">Recommended:</span>
+<a id="navMenuControl_rptrFeatuedGifts_ctl00_lnkFeaturedProductInfo" class="drodpown-recommended" href="https://www.amrod.co.za/catalogue/corporate-gifts,brand-new,bags/alex-varga-claska-laptop-backpack">
+<div class="image-wrap">
+<img id="navMenuControl_rptrFeatuedGifts_ctl00_imgFeaturedProductImage" alt="GF-AV-1042-B" title="Alex Varga Claska Laptop Backpack" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/GF-AV-1042-B_260_250.jpg" style="border-width:0px;">
+</div>
+<span id="navMenuControl_rptrFeatuedGifts_ctl00_lblFeaturedProductName" class="title-wrap">Alex Varga Claska Laptop Backpack</span></a>
+<a id="navMenuControl_rptrFeatuedGifts_ctl01_lnkFeaturedProductInfo" class="drodpown-recommended" href="https://www.amrod.co.za/catalogue/corporate-gifts,brand-new,bags/regis-premium-mini-gift-bag">
+<div class="image-wrap">
+<img id="navMenuControl_rptrFeatuedGifts_ctl01_imgFeaturedProductImage" alt="BG-AM-417-B" title="Regis Premium Mini Gift Bag" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/BG-AM-417-B_260_250.jpg" style="border-width:0px;">
+</div>
+<span id="navMenuControl_rptrFeatuedGifts_ctl01_lblFeaturedProductName" class="title-wrap">Regis Premium Mini Gift Bag</span></a>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="dropdown yamm-fw">
+<a class="dropdown-toggle" data-toggle="dropdown">Clothing <i class="fa fa-angle-down"></i></a>
+<ul class="dropdown-menu">
+<li>
+<div class="yamm-content">
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-md-3 yamm-main">
+<div class="col-lg-12 yamm-main-wrap">
+<span class="title"><a id="navMenuControl_navClothing" class="nmLink" href="https://www.amrod.co.za/catalogue/corporate-clothing">Categories</a></span>
+<div class="row">
+<ul style="white-space: nowrap;" class="col-md-4"><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,new-clothing-2023">New Clothing 2023</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,winterwear">Winterwear</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,bodywarmers">Bodywarmers</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,fleece-sweaters">Fleece and Sweaters</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,footwear">Footwear</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,golf-shirts">Golf Shirts</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,hoodies">Hoodies</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,jackets">Jackets</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,kids-clothing">Kids Clothing</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,knitwear">Knitwear</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,lounge-shirts">Lounge Shirts</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,pants-skirts-belts">Pants Skirts and Belts</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,tracksuits">Tracksuits</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/corporate-clothing,t-shirts">T-Shirts</a></li><li><a style="color:red;" href="https://www.amrod.co.za/catalogue/corporate-clothing,marked-to-clear">Marked To Clear</a></li></ul>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-md-3 yamm-main">
+<div class="col-lg-12 yamm-main-wrap">
+<span class="title">Brands</span>
+<div class="row hidden-xs hidden-sm">
+<ul style="white-space: nowrap;" class="col-md-4"><li><a style="" href="https://www.amrod.co.za/catalogue/brands,altitude-clothing?ct=2">Altitude</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,alex-varga?ct=2">Alex Varga</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,biz-collection?ct=2">Biz Collection</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,elevate?ct=2">Elevate</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,gary-player-collection?ct=2">Gary Player Collection</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,okiyo?ct=2">Okiyo</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,slazenger?ct=2">Slazenger</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,us-basic?ct=2">US Basic</a></li></ul>
+</div>
+</div>
+</div>
+<div class="col-md-6 hidden-xs hidden-sm yamm-side">
+<span class="title">Recommended:</span>
+<div class="row">
+<div class="col-md-6">
+<a id="navMenuControl_rptrFeatuedClothing1_ctl00_lnkFeaturedProductInfo" class="drodpown-recommended" href="https://www.amrod.co.za/catalogue/corporate-clothing,winterwear,jackets/mens-alex-varga-ascentia-jacket">
+<div class="image-wrap">
+<img id="navMenuControl_rptrFeatuedClothing1_ctl00_imgFeaturedProductImage" alt="JC-AV-121-A" title="Mens Alex Varga Ascentia Jacket" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/JC-AV-121-A_260_250.jpg" style="border-width:0px;">
+</div>
+<span id="navMenuControl_rptrFeatuedClothing1_ctl00_lblFeaturedProductName" class="title-wrap">Mens Alex Varga Ascentia Jacket</span></a>
+<a id="navMenuControl_rptrFeatuedClothing1_ctl01_lnkFeaturedProductInfo" class="drodpown-recommended" href="https://www.amrod.co.za/catalogue/corporate-clothing,pants-skirts-belts/ladies-sasha-stretch-pants">
+<div class="image-wrap">
+<img id="navMenuControl_rptrFeatuedClothing1_ctl01_imgFeaturedProductImage" alt="BO-UB-29-A" title="Ladies Sasha Stretch Pants" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/BO-UB-29-A_260_250.jpg" style="border-width:0px;">
+</div>
+<span id="navMenuControl_rptrFeatuedClothing1_ctl01_lblFeaturedProductName" class="title-wrap">Ladies Sasha Stretch Pants</span></a>
+</div>
+ <div class="col-md-6">
+<a id="navMenuControl_rptrFeatuedClothing2_ctl00_lnkFeaturedProductInfo" class="drodpown-recommended" href="https://www.amrod.co.za/catalogue/corporate-clothing,golf-shirts/ladies-crest-golf-shirt-aqua">
+<div class="image-wrap">
+<img id="navMenuControl_rptrFeatuedClothing2_ctl00_imgFeaturedProductImage" alt="SLAZ-804-AQ" title="Ladies Crest Golf Shirt - Aqua" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/SLAZ-804-AQ_260_250.jpg" style="border-width:0px;">
+</div>
+<span id="navMenuControl_rptrFeatuedClothing2_ctl00_lblFeaturedProductName" class="title-wrap">Ladies Crest Golf Shirt - Aqua</span></a>
+<a id="navMenuControl_rptrFeatuedClothing2_ctl01_lnkFeaturedProductInfo" class="drodpown-recommended" href="https://www.amrod.co.za/catalogue/all-clearance-items,clothing-clearance,pitt-shirts/ladies-nitro-pitt-shirt-lime">
+<div class="image-wrap">
+<img id="navMenuControl_rptrFeatuedClothing2_ctl01_imgFeaturedProductImage" alt="BIZ-3640-L" title="Ladies Nitro Pitt Shirt  - Lime" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/BIZ-3640-L_260_250.jpg" style="border-width:0px;">
+</div>
+<span id="navMenuControl_rptrFeatuedClothing2_ctl01_lblFeaturedProductName" class="title-wrap">Ladies Nitro Pitt Shirt - Lime</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="dropdown yamm-fw">
+<a class="dropdown-toggle" data-toggle="dropdown">Headwear <i class="fa fa-angle-down"></i></a>
+<ul class="dropdown-menu">
+<li>
+<div class="yamm-content">
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-md-3 yamm-main">
+<div class="col-lg-12 yamm-main-wrap">
+<span class="title"><a id="navMenuControl_HyperLink1" class="nmLink" href="https://www.amrod.co.za/catalogue/headwear-accessories">Categories</a></span>
+<div class="row">
+<ul style="white-space: nowrap;" class="col-md-4"><li><a style="" href="https://www.amrod.co.za/catalogue/headwear-accessories,caps">Caps</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/headwear-accessories,beanies">Beanies</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/headwear-accessories,scarves">Scarves</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/headwear-accessories,gloves">Gloves</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/headwear-accessories,headwear-sets">Headwear Sets</a></li><li><a style="color:red;font-style: italic;" href="https://www.amrod.co.za/catalogue/headwear-accessories,specials">Specials</a></li></ul>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-md-3 yamm-main">
+<div class="col-lg-12 yamm-main-wrap">
+<span class="title">Brands</span>
+<div class="row hidden-xs hidden-sm">
+<ul style="white-space: nowrap;" class="col-md-4"><li><a style="" href="https://www.amrod.co.za/catalogue/brands,altitude-headwear?ct=3">Altitude</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,alex-varga?ct=3">Alex Varga</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,biz-collection">Biz Collection</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,elevate?ct=3">Elevate</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,gary-player-collection?ct=3">Gary Player Collection</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,okiyo">Okiyo</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,slazenger?ct=3">Slazenger</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/brands,us-basic?ct=3">US Basic</a></li></ul>
+</div>
+</div>
+</div>
+<div class="col-md-6 hidden-xs hidden-sm yamm-side">
+<span class="title">Recommended:</span>
+<div class="row">
+<div class="col-md-6">
+<a id="navMenuControl_rptrFeatuedHeadwear1_ctl00_lnkFeaturedProductInfo" class="drodpown-recommended" href="https://www.amrod.co.za/catalogue/headwear-accessories,caps/deuce-cap-6-panel">
+<div class="image-wrap">
+<img id="navMenuControl_rptrFeatuedHeadwear1_ctl00_imgFeaturedProductImage" alt="HS-SL-55-C" title="Deuce Cap - 6 Panel" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/HS-SL-55-C_260_250.jpg" style="border-width:0px;">
+</div>
+<span id="navMenuControl_rptrFeatuedHeadwear1_ctl00_lblFeaturedProductName" class="title-wrap">Deuce Cap - 6 Panel</span></a>
+<a id="navMenuControl_rptrFeatuedHeadwear1_ctl01_lnkFeaturedProductInfo" class="drodpown-recommended" href="https://www.amrod.co.za/catalogue/brands,us-basic/nebraska-winter-set-navy-only">
+<div class="image-wrap">
+<img id="navMenuControl_rptrFeatuedHeadwear1_ctl01_imgFeaturedProductImage" alt="GIFTSET-7476-N" title="Nebraska Winter Set  - Navy" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/GIFTSET-7476-N_260_250.jpg" style="border-width:0px;">
+</div>
+<span id="navMenuControl_rptrFeatuedHeadwear1_ctl01_lblFeaturedProductName" class="title-wrap">Nebraska Winter Set - Navy</span></a>
+</div>
+<div class="col-md-6">
+<a id="navMenuControl_rptrFeatuedHeadwear2_ctl00_lnkFeaturedProductInfo" class="drodpown-recommended" href="https://www.amrod.co.za/catalogue/headwear-accessories,headwear-sets/nebraska-winter-set-black">
+<div class="image-wrap">
+<img id="navMenuControl_rptrFeatuedHeadwear2_ctl00_imgFeaturedProductImage" alt="GIFTSET-7476-BL" title="Nebraska Winter Set  - Black" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/GIFTSET-7476-BL_260_250.jpg" style="border-width:0px;">
+</div>
+<span id="navMenuControl_rptrFeatuedHeadwear2_ctl00_lblFeaturedProductName" class="title-wrap">Nebraska Winter Set - Black</span></a>
+ <a id="navMenuControl_rptrFeatuedHeadwear2_ctl01_lnkFeaturedProductInfo" class="drodpown-recommended" href="https://www.amrod.co.za/catalogue/brands,us-basic/nebraska-winter-set-grey-only">
+<div class="image-wrap">
+<img id="navMenuControl_rptrFeatuedHeadwear2_ctl01_imgFeaturedProductImage" alt="GIFTSET-7476-GY" title="Nebraska Winter Set  - Grey" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/GIFTSET-7476-GY_260_250.jpg" style="border-width:0px;">
+</div>
+<span id="navMenuControl_rptrFeatuedHeadwear2_ctl01_lblFeaturedProductName" class="title-wrap">Nebraska Winter Set - Grey</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="dropdown yamm-fw liWorkwearMenu">
+<a id="navMenuControl_lnkWorkwearMenu" class="dropdown-toggle" href="https://www.amrod.co.za/catalogue/workwear">Workwear</a>
+</li>
+
+<li class="dropdown yamm-fw liDisplayMenu">
+<a id="navMenuControl_lnkDisplayMenu" class="dropdown-toggle" href="https://www.amrod.co.za/catalogue/display">Display</a>
+</li>
+
+<li class="dropdown yamm-fw liWorkwearMenu">
+<a id="navMenuControl_lnkCustomBoxesMenu" class="dropdown-toggle" href="https://www.amrod.co.za/catalogue/custom-products">Custom Products</a>
+</li>
+
+<li class="dropdown yamm-fw">
+<a class="dropdown-toggle" data-toggle="dropdown">Clearance <i class="fa fa-angle-down"></i></a>
+<ul class="dropdown-menu">
+<li>
+<div class="yamm-content">
+<div class="container">
+<div class="row">
+<div class="col-md-12 col-lg-12 yamm-main">
+<div class="col-lg-12">
+<span class="title">
+<a id="navMenuControl_navClearance" title="View All Clearance Items" class="nmLink" href="https://www.amrod.co.za/catalogue/all-clearance-items">Clearance</a>
+</span>
+<div class="row">
+<ul style="white-space: nowrap;" class="col-md-3"><li><a style="" href="https://www.amrod.co.za/catalogue/all-clearance-items,gifting-clearance">Gifting Clearance</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/all-clearance-items,personal-care-clearance">Personal Care Clearance</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/all-clearance-items,clearance-pens">Pen Clearance</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/all-clearance-items,sets">Sets</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/all-clearance-items,clothing-clearance">Clothing Clearance</a></li><li><a style="" href="https://www.amrod.co.za/catalogue/all-clearance-items,headwear-to-clear">Headwear Clearance</a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="dropdown yamm-fw" id="li-KnowledgeBase">
+<a id="lnkKnowledgeBase" class="dropdown-toggle" href="https://www.amrod.co.za/#" data-toggle="dropdown">&nbsp;</a>
+<ul class="dropdown-menu" style="margin-top: 76px;">
+<li>
+ <div class="yamm-content">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 yamm-main">
+<div class="col-lg-12">
+<span class="title" style="margin-bottom: 10px;">Knowledge Base</span>
+<div class="row downloadsSpan knowledge-base">
+<div class="row">
+<div class="col-md-3"><ul><li><span>About the Promo Industry</span></li><li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/DownloadManager/Power_of_promoFIN2.pdf" target="_blank">The 5Rs of Promotional Products</a></li><li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/DownloadManager/The%20Power%20of%20Promotional%20Products%202020.pdf" target="_blank">The Power of Promotional Products</a></li><li><a href="https://www.amrod.co.za/Imaging/SecureDownload.aspx?Store=77a8c4f4-9bad-4bae-9448-16b37eb379bf&amp;Type=13&amp;Category=Marketing+Material&amp;Name=Why+some+distributors+fail-FIN.pdf&amp;Mode=inline&amp;BackOfficeDownloads=true" target="_blank">Why Some Distributors Fail</a></li></ul><ul><li><span>Amrod Loyalty Programme</span></li><li><a href="https://amrod2015.s3.amazonaws.com/Downloads/2023-ALP/2023%20ALP%20Prog-SA-dft3.pdf" target="_blank">ALP Programme 2023</a></li><li><a href="https://www.amrod.co.za/alpribbons.aspx" target="_self">ALP Stationery</a></li><li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/DownloadManager/Uniform%20Programme-Resellers%202021-FIN.pdf" target="_blank">Staff Uniform Programme - 2022</a></li></ul><ul><li><span>Amrod Training Academy</span></li><li><a href="https://jwp.io/s/zbuPlzRq" target="_blank">About Amrod Academy</a></li><li><a href="https://amrodacademy.marketing.amrod.co.za/" target="_blank">Access Amrod Academy </a></li></ul><ul><li><span>Brands and Branding</span></li><li><a href="https://jwp.io/s/iBpTGBTl" target="_blank">Digital Transfer On Clothing Video</a></li><li><a href="https://display.marketing.amrod.co.za/home-212-434-352-439" target="_blank">Display: Outsource Your Artwork</a></li><li><a href="https://jwp.io/s/XWmTVKHV" target="_blank">Display: Watch The Promotional Video</a></li><li><a href="http://cdn.amrod.co.za/Downloads/IN-HOUSE-BRANDING-SOLUTIONS.pdf" target="_self">In-House Branding Solutions</a></li><li><a href="https://www.amrod.co.za/BrandingProcesses.aspx" target="_blank">In-House Branding Videos</a></li><li><a href="https://jwp.io/s/wqZIx0qV" target="_blank">Take a Tour of the Display Manufacturing Process</a></li></ul></div><div class="col-md-3"><ul><li><span>Downloads</span></li><li><a href="https://www.amrod.co.za/Imaging/SecureDownload.aspx?Store=77a8c4f4-9bad-4bae-9448-16b37eb379bf&amp;Type=5&amp;Category=Downloads&amp;Name=Courier-Form.pdf&amp;Mode=inline&amp;BackOfficeDownloads=true" target="_blank">Courier Collection Form</a></li><li><a href="https://www.amrod.co.za/Imaging/SecureDownload.aspx?Store=77a8c4f4-9bad-4bae-9448-16b37eb379bf&amp;Type=5&amp;Category=Downloads&amp;Name=PERSONALISATION+TEMPLATE+OCT+2020.xlsx&amp;Mode=inline&amp;BackOfficeDownloads=true" target="_blank">Customer Personalisation Sheet</a></li><li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/DownloadManager/Giftsets-OldCode_NewCode%20FULL%20Dft7.pdf" target="_blank">New Gift Set Codes</a></li><li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/DownloadManager/Powerbank%20safety.pdf" target="_blank">Power Bank Safety</a></li><li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/DownloadManager/Power%20Banks%20Comparison%20Table-2019.pdf" target="_blank">Power Banks Comparison Table</a></li><li><a href="http://cdn.amrod.co.za/Downloads/Registered%20Amrod%20Distributor%202017-low.jpg" target="_self">Registered Distributor Ribbon - Low Res</a></li><li><a href="http://cdn.amrod.co.za/Downloads/Registered%20Amrod%20Distributor%202017-med.jpg" target="_self">Registered Distributor Ribbon - Med Res</a></li></ul><ul><li><span>Guides &amp; FAQ's</span></li><li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/DownloadManager/Artwork-FAQ%20-FIN.pdf" target="_blank">Artwork FAQ</a></li><li><a href="http://cdn.amrod.co.za/Downloads/The-Art-Manual-FIN.PDF" target="_blank">Artwork Manual</a></li><li><a href="http://cdn.amrod.co.za/Downloads/BRANDING-101.pdf" target="_self">Branding 101</a></li><li><a href="http://cdn.amrod.co.za/Downloads/Branding-FAQ.pdf" target="_self">Branding FAQ</a></li><li><a href="https://www.amrod.co.za/Imaging/SecureDownload.aspx?Store=77a8c4f4-9bad-4bae-9448-16b37eb379bf&amp;Type=6&amp;Category=Guides+%26+FAQ%27s&amp;Name=eServices+FAQ+2020.pdf&amp;Mode=inline&amp;BackOfficeDownloads=true" target="_blank">eServices FAQ</a></li><li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/DownloadManager/2023%20Inclusive%20of%20Branding%20-%20Clothing.pdf" target="_blank">Inclusive of Branding on Clothing 2023</a></li><li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/DownloadManager/2023%20Inclusive%20of%20Branding%20-%20Headwear.pdf" target="_blank">Inclusive of Branding on Headwear 2023</a></li><li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/DownloadManager/International%20Tolerances%20on%20Clothing.pdf" target="_blank">International Tolerances on Clothing</a></li><li><a href="https://d33yj9nw58rehz.cloudfront.net/Downloads/LOGO24%20guide-FIN.pdf" target="_blank">Logo24 Guide</a></li><li><a href="https://www.amrod.co.za/Imaging/SecureDownload.aspx?Store=77a8c4f4-9bad-4bae-9448-16b37eb379bf&amp;Type=6&amp;Category=Guides+%26+FAQ%27s&amp;Name=Poterntial+Stock+arrival+disruptions+FIN.pdf&amp;Mode=inline&amp;BackOfficeDownloads=true" target="_blank">Potential Stock Arrival Disruptions</a></li></ul><ul><li><span>Marketing Material</span></li><li><a href="https://promoproductsmedia.co.za/" target="_blank">Marketing Resources</a></li></ul><ul><li><span>Pricelists</span></li><li><a style="color:#FF0000" href="https://www.amrod.co.za/Imaging/SecureDownload.aspx?Store=77a8c4f4-9bad-4bae-9448-16b37eb379bf&amp;Type=12&amp;Category=Pricelists&amp;Name=Amrod+Price+List_1+July+2023+-+South+Africa.xlsx&amp;Mode=inline&amp;BackOfficeDownloads=true" target="_blank">Amrod Group Price List Effective 1 July 2023</a></li></ul></div><div class="col-md-3"><ul><li><span>Tutorials</span></li><li><a href="https://www.youtube.com/watch?v=XNnv1w-Zxbs" target="_blank">Amrod Dashboard</a></li><li><a href="https://jwp.io/s/R9xUQO9R" target="_blank">Branding Guidelines</a></li><li><a href="https://jwp.io/s/RgZMQpbt" target="_blank">How to Create Display Layouts</a></li><li><a href="https://jwp.io/s/DqYiIjlZ" target="_blank">How To Interact With Our Sales Hub</a></li><li><a href="https://jwp.io/s/nF3NlOWE" target="_blank">How To Place Your Display Order Online</a></li><li><a href="https://jwp.io/s/F8tcT3AP" target="_blank">How to use Amrod Academy</a></li><li><a href="https://jwp.io/s/YEghLik9" target="_blank">Lead-time Calculator</a></li><li><a href="https://youtu.be/WYGNRXHMIGw" target="_blank">Logo Upload</a></li><li><a href="https://youtu.be/6GkRS-XTZbI" target="_blank">Online Approvals</a></li><li><a href="https://www.youtube.com/watch?v=VbcQyxRnIuQ" target="_blank">Online Delivery</a></li><li><a href="https://www.youtube.com/watch?v=M1SmFz0QNTc" target="_blank">Online Ordering</a></li><li><a href="https://jwp.io/s/MoKd6Xpa" target="_blank">Online Ordering – LOGO24</a></li><li><a href="https://youtu.be/K4ONtTHP2ao" target="_blank">Online Payments</a></li><li><a href="https://jwp.io/s/qpiZM4Ya" target="_blank">Tenders Explained</a></li><li><a href="http://%20https//jwp.io/s/MHdUTqTx" target="_blank">Terms &amp; Conditions</a></li><li><a href="https://jwp.io/s/YnJwZ2IX" target="_blank">Vector vs Non-Vector Artwork</a></li><li><a href="https://jwp.io/s/hK80O46r" target="_blank">Website Navigation</a></li><li><a href="https://jwp.io/s/NHMllVen" target="_self">You've Registered - Now What?</a></li></ul></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div id="timeLeftCounter" class="row" style="display: none;">
+<div class="btn-outline">
+Your order <span id="OrderSONumber"></span> still needs to be paid. Time left before order is cancelled: <span id="clock"></span><a id="lnkMakePaymentNow" style="text-decoration: underline;">Make payment now</a>
+</div>
+</div>
+</div>
+<div class="container headerContent text-center">
+<div>Total-Solution Promotional Products Provider</div>
+</div>
+</header>
+
+<div class="container homepage subNavMenu">
+<div class="row text-center">
+<div class="center-col">
+<ul class="nav navbar-nav hidden-xs hidden-sm subNavlinks">
+<li id="btnWhyAmrod" class="active"><a href="https://www.amrod.co.za/#whyAmrod">Why Amrod</a></li>
+<li><a href="https://www.amrod.co.za/#ourProducts">Our Products</a></li>
+<li><a href="https://www.amrod.co.za/#inhouseBranding">In-House Branding</a></li>
+<li><a href="https://www.amrod.co.za/#branches">Branches</a></li>
+<li><a href="https://www.amrod.co.za/#register">Register</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="SlidingBanners" class="banner-slider-split">
+<div class="container">
+<div class="row centerText">
+<div class="col-md-4 text-center"><div class="banner-slider-split-a"><ul class="ulHomePageBanner"><li><a target="_blank" href="https://hoppla.marketing.amrod.co.za/"><img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/MicrosoftTeams-image (7).png" class="img-responsive"></a></li></ul></div></div><div class="col-md-4 text-center"><div class="banner-slider-split-b"><ul class="ulHomePageBanner"><li><a target="_blank" href="https://winter.marketing.amrod.co.za/"><img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/MicrosoftTeams-image (1).png" class="img-responsive"></a></li></ul></div></div><div class="col-md-4 text-center"><div class="banner-slider-split-c"><ul class="ulHomePageBanner"><li><a target="_blank" href="https://evaandelm.marketing.amrod.co.za/"><img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/MicrosoftTeams-image (6).png" class="img-responsive"></a></li></ul></div></div>
+</div>
+</div>
+</div>
+<main role="main">
+
+<div class="container hpContainer">
+<div class="row">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/marketingBanner.jpg" class="img-responsive">
+</div>
+<div id="whyAmrod"></div>
+</div>
+<section class="secHP">
+<div class="container hpContainer whyChoose">
+<div class="row">
+<h2>Why choose Amrod?</h2>
+<div class="text-center">
+<p class="center-col">
+At the heart of The Amrod Group is the Amrod Total Solution which strives to provide a seamless end to end solution for our customers to enable them to focus on selling with confidence.
+Backed by a extensive selection of products across multiple brands and ranges including the Altitude offering -
+</p>
+ </div>
+</div>
+</div>
+<div class="container hpContainer">
+<div class="row">
+<div class="col-xs-12">
+<div class="col-md-5">
+<h3>Your Total-Solution Promotional Products Provider</h3>
+<p>
+The Amrod Total Solution gives you the confidence and ability to bring your brand to life with infinite possibilities. Housed in a state of the art facility in Johannesburg, and a network of branches across South Africa, Namibia, Botswana, Zambia, Kenya and Nigeria the 1300 member Amrod team is committed to being a global leader in Promotion Products. As a strictly trade-only supplier, Amrod partners with resellers across the African continent to help brands grow by leveraging the Power of Promotional products
+</p>
+</div>
+<div class="col-md-1"></div>
+<div class="col-md-6">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/banner2.jpg">
+</div>
+</div>
+</div>
+</div>
+<div id="ourProducts"></div>
+</section>
+<section class="ourProducts">
+<div class="container hpContainer">
+<div class="row">
+<h2>Our Products</h2>
+</div>
+</div>
+<div class="container hpContainer">
+<div class="row">
+<div class="col-xs-12">
+<div class="col-md-6">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/promotional.jpg">
+</div>
+<div class="col-md-6 hpOurProductsLeft">
+<h3>Promotional Products</h3>
+<p>
+From everyday promo essentials to the latest mobile tech, Amrod's collection contains the perfect gift, no matter the budget or occasion.
+<br><br>
+Our range of Promotional Products is filled with inspirational ideas that resellers and corporate clients will love and is backed by deep inventory levels that will not disappoint.
+With over 1 200 products positioned under 19 categories, there’s something for every occasion or marketing campaign, all ready to customise with your logo.
+<br><br>
+Amrod's industry-leading collection features global gifting brands defined by contemporary designs, premium quality construction and universal appeal. Brands elevate the perceived value of products and offer corporate clients the opportunity to choose from a premium selection of beautifully packaged and unique items. These brands continue to grow in popularity and have become an exciting part of our gifting offering.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container hpContainer hpOurProducts">
+<div class="row">
+<div class="col-xs-12">
+<div class="col-md-6 hpOurProductsRight">
+<h3>Apparel</h3>
+<p>
+With a focus on design, functionality, quality and price, Amrod’s range of on-trend Apparel is backed by a sizable stock holding and has evolved into one of the premier offerings in the Promotional Industry.
+<br><br>
+Our extensive and appealing apparel collection is positioned under 7 distinct brands and features high-impact styles for men, women and kids - making it easy to choose the right combination of style and performance, whether the requirement is casual, sporty or corporate.
+<br><br>
+Our logo-ready apparel is available in a variety of colours, fits and sizes – catering for all your corporate and promotional clothing needs. From budget-friendly giveaways and everyday essentials to apparel that’s designed to show off team colours, there’s a look and feel that’s perfect for everyone.
+</p>
+</div>
+<div class="col-md-6">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/apparel.jpg">
+</div>
+</div>
+</div>
+</div>
+<div class="container hpContainer hpOurProducts">
+<div class="row">
+<div class="col-xs-12">
+<div class="col-md-6">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/headwear.jpg">
+</div>
+<div class="col-md-6 hpOurProductsLeft">
+<h3>Headwear</h3>
+<p>
+We have placed a major focus on developing our Headwear category and are proud to offer a compelling collection, backed by deep stock in a variety of on-trend styles and colours designed to maximise your brand exposure.
+<br><br>
+Whether you are looking for promo essentials, protective headwear, sporty styles, on-trend designs or superior quality, fit and performance - this logo-ready collection caters to every requirement and is positioned under a host of well-known and sought after brands including: Altitude, Gary Player, Slazenger and more!
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container hpContainer hpOurProducts">
+<div class="row">
+<div class="col-xs-12">
+<div class="col-md-6 hpOurProductsRight">
+<h3>Workwear</h3>
+<p>
+Finding and investing in the right Workwear solution is essential for any industry, not only to provide your staff with dependable everyday gear to get the job done, but to save costs in the long run. Altitude Workwear is designed with a primary focus on safety, durability and reliability.
+<br><br>
+Technological advancements in the manufacturing process, have allowed us to select the right technical fabrics for all our garments - ensuring improved functionality, performance and durability.
+<br><br>
+Once you’ve found the right Workwear solution, it’s time to put your mark on it. Branding your Workwear with your company logo is a fantastic way to build brand awareness and will assist you in creating clear identification and meeting compliance requirements on any site you visit.
+</p>
+</div>
+<div class="col-md-6">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/workwear.jpg">
+</div>
+ </div>
+</div>
+</div>
+<div class="container hpContainer hpOurProducts">
+<div class="row">
+<div class="col-xs-12">
+<div class="col-md-6">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/display.jpg">
+</div>
+<div class="col-md-6 hpOurProductsLeft">
+<h3>Display</h3>
+<p>
+Choose from over 200 display solutions to suit any environment or requirement.
+<br><br>
+Our display solutions provide the perfect platform to advertise your brand anywhere you choose, allowing you to generate brand awareness and market your products or services to a wide audience with ease.
+<br><br>
+Designed to meet all your indoor and outdoor requirements, all of our displays are manufactured to the highest standards and our scientific approach ensures quality and consistency throughout.
+<br><br>
+The range features a comprehensive selection of floor vinyl’s, pull up banners, banner walls, table cloths, flags, flag fountains, pop-up banners, a-frame banners, flying banners, parasols, gazebos and more.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container hpContainer hpOurProducts">
+<div class="row">
+<div class="col-xs-12">
+<div class="col-md-6 hpOurProductsRight">
+<h3>Custom Products</h3>
+<p>
+Our custom products provide infinite packaging and gifting possibilities for brands that want to connect with their customers from start to finish.
+<br><br>
+Hoppla! is your go-to brand for fully customisable bags, coolers, pencil cases, accessories and so much more! This range is locally manufactured, incorporating fabric printed in full colour to bring your design to life. With Hoppla! you have the freedom to create a unique and personalised design that perfectly suits your style.
+<br><br>
+Take your gifting game to the next level with Custom Packaging; a range of fully customisable gift boxes and gift bags.
+Packaging and presentation can make all the difference to the way your brand is perceived and to how your message is received.
+Whether it’s a gift, a goodie box or gift bag, why not highlight your unique identity or message by branding it with your own design.
+Choose from a selection of gift boxes and bags, which are biodegradable and can be recycled.
+</p>
+</div>
+<div class="col-md-6">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/customproducts.jpg">
+</div>
+</div>
+</div>
+<div id="inhouseBranding"></div>
+</div>
+</section>
+<section class="secHP">
+<div class="container hpContainer whyChoose">
+<div class="row">
+<h2>Our In-House Branding</h2>
+<div class="text-center">
+<p class="center-col">
+With industry-leading turnaround times, large capacity across all departments and an in-depth understanding of the complexity of branding, Amrod provides clients with the ease, convenience and cost-savings associated with purchasing and branding product at one point.
+</p>
+</div>
+</div>
+</div>
+<div class="container hpContainer">
+<div class="row">
+<div class="col-xs-12">
+<div class="col-md-5" style="padding-right: 40px;">
+<p>
+After studying many overseas companies in the Promotional Products space, Amrod pioneered the concept of offering an in-house branding solution in South Africa in 2007. Presently, Amrod’s Production (branding) Department comprises over 690 skilled team members, working 24 hours a day, to ensure that they meet and exceed clients’ branding needs.
+<br>
+<br>
+Employing the latest technology and processes and leveraging their branding expertise, Amrod offers clients the ability to take the industry’s most engaging collection and make it their own. Offering the choice of 18 branding techniques, Amrod’s clients are able to combine multiple methods and locations on the same item, projecting exactly the right image for their brands.
+</p>
+</div>
+<div class="col-md-7">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/inhouse-branding.jpg" style="max-width: 100%;">
+</div>
+</div>
+</div>
+<div class="row" style="margin-top: 60px;">
+<div class="col-lg-12 hp-logo24">
+<div class="col-lg-1">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/Logo24-hp2.png">
+</div>
+<div class="col-lg-11 hpL24-content">
+<div class="col-lg-9">
+<div>With LOGO24, unplanned doesn't have to mean unbranded...</div>
+<p>LOGO24 is an extraordinary new initiative that offers "next day" turnaround including branding on 170 of our most popular products when you need branded products super-fast!</p>
+</div>
+<div class="col-lg-3 hpL24-working">
+<div class="text-center">
+<a target="_blank" href="https://d33yj9nw58rehz.cloudfront.net/Downloads/LOGO24-2.pdf">How Logo24 works</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container hpContainer whyChoose">
+<div class="row">
+<h3 class="text-center">Branding Techniques</h3>
+<div class="text-center">
+<p class="center-col">
+Offering the choice of 18 branding techniques, Amrod's clients are able to combine multiple methods and locations on the same item, projecting exactly the right image for their brands.
+</p>
+</div>
+</div>
+<div id="brandingVideos" class="row" style="display: none;">
+<div style="width: 515px; margin: 0 auto;">
+<iframe id="brandingVideo" scrolling="no" width="515" height="263" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/saved_resource.html"></iframe>
+</div>
+</div>
+<div class="row brandTechs">
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/bellyBands.png">
+<a class="brand-hover" brand="bellyBands">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Belly Bands</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/debossing.png">
+<a class="brand-hover" brand="debossing">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Debossing</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/debossAndDome.png">
+<a class="brand-hover" brand="debossAndDome">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Deboss &amp; Dome Combination Branding</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/digitalPrintingBags.png">
+<a class="brand-hover" brand="digitalPrintingBags">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Digital Printing on Bags</div>
+</div>
+<div>
+ <div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/digitalPrintingDrinkware.png">
+<a class="brand-hover" brand="digitalPrintingDrinkware">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Digital Printing on Drinkware</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/digitalPrintNotebooks.png">
+<a class="brand-hover" brand="digitalPrintNotebooks">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Digital Printing on Notebooks</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/digitalTransferClothing.png">
+<a class="brand-hover" brand="digitalTransferClothing">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Digital Transfer on Clothing</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/directProductPrint.png">
+<a class="brand-hover" brand="directProductPrint">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Direct to Product Printing</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/domedStickers.png">
+<a class="brand-hover" brand="domedStickers">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Domed Stickers</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/embroidery.png">
+<a class="brand-hover" brand="embroidery">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Embroidery</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/foilHotStamping.png">
+<a class="brand-hover" brand="foilHotStamping">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Foil Hot Stamping</div>
+ </div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/heatTransferPrinting.png">
+<a class="brand-hover" brand="heatTransferPrinting">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Heat Transfer Printing</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/laserEngraving.png">
+<a class="brand-hover" brand="laserEngraving">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Laser Engraving</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/laserEtchingClothing.png">
+<a class="brand-hover" brand="laserEtchingClothing">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Laser Etching on Clothing</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/padPrinting.png">
+<a class="brand-hover" brand="padPrinting">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Pad Printing</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/screenPrinting.png">
+<a class="brand-hover" brand="screenPrinting">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Screen Printing</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/sublimation.png">
+<a class="brand-hover" brand="sublimation">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Sublimation Printing</div>
+</div>
+<div>
+<div class="branding-stage">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/vinylStickers.png">
+<a class="brand-hover" brand="vinylStickers">
+<span class="inner"><i class="fas fa-search-plus"></i></span>
+</a>
+</div>
+<div>Vinyl Stickers</div>
+</div>
+</div>
+
+<div id="branches"></div>
+</div>
+</section>
+<section class="secHP">
+<div class="container hpContainer whyChoose">
+<div class="row">
+<h2>Our Branches</h2>
+<div class="text-center">
+<p class="center-col">
+With an expanding network and African footprint, it’s easier than ever to partner with Africa’s Leading Trade Only, Total Solution Promotional Products Provider.
+The Amrod range is available to view in our wide range of showrooms across the continent.
+</p>
+</div>
+</div>
+<div class="row">
+<div class="row" style="margin-top: 60px;">
+<div class="col-lg-5" style="padding: 0;">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/africaMap.png" class="img-responsive">
+<div class="natConNumber">
+<span>National Contact Number (SA only)</span>
+<span><i class="fas fa-phone"></i>086-11-Amrod</span>
+<br>
+<span>Opening Hours</span>
+<span>Monday - Friday, 8am - 5pm, local time</span>
+</div>
+<div class="altOffers">
+Amrod offers a free delivery service to all of our branches. For more information on this service and our delivery terms and conditions, please contact your Account Manager.
+</div>
+
+<div class="col-lg-12 hpBranch">
+<div class="col-lg-1" style="padding: 0;">
+<div class="bNumber">
+<i class="fas fa-map-marker"></i>
+<span class="yellowDot">7</span>
+</div>
+</div>
+<div class="col-lg-11 branchDetails">
+<span>Namibia</span>
+<div class="physAddress">
+<b>Physical Address: </b>7907 Tv More street, Reger Park, <br>Southern Industrial Area, Windhoek,Namibia
+</div>
+<div>
+<span><i class="fas fa-phone fa-flip-horizontal"></i>+264 85 201 4591/2</span>
+<span><i class="fas fa-envelope"></i><a href="mailto:namibia@amrod.co.za">namibia@amrod.co.za</a></span>
+<span><i class="fas fa-compass"></i><a href="https://goo.gl/maps/rvF212g4VNp" target="_blank">22°34'38.2"S 17°04'30.0"E</a></span>
+</div>
+</div>
+</div>
+
+<div class="col-lg-12 hpBranch">
+<div class="col-lg-1" style="padding: 0;">
+<div class="bNumber">
+<i class="fas fa-map-marker"></i>
+<span class="darkGreenDot" style="padding-left: 4px;">10</span>
+</div>
+</div>
+<div class="col-lg-11 branchDetails">
+ <span>Nigeria</span>
+<div class="physAddress">
+<b>Physical Address: </b>Eleganza Biro Plaza, <br>634 Akin Adesola Victoria Island<br>Lagos, Nigeria
+</div>
+<div>
+<span><i class="fas fa-phone fa-flip-horizontal"></i>+234 816 565 1317</span>
+<span><i class="fas fa-envelope"></i><a href="mailto:nigeria@amrod.co.za">nigeria@amrod.co.za</a></span>
+<span><i class="fas fa-compass"></i><a href="https://www.google.co.za/maps/place/Eleganza+Biro+Plaza/@6.4359612,3.4245254,21z/data=!4m12!1m6!3m5!1s0x103bf52bd5ff9f55:0x36861a597820b157!2sEleganza+Biro+Plaza!8m2!3d6.4359392!4d3.4245935!3m4!1s0x103bf52bd5ff9f55:0x36861a597820b157!8m2!3d6.4359392!4d3.4245935" target="_blank">6°26'09.4"N 3°25'28.6"E</a></span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4" style="width: 31%;">
+
+<div class="col-lg-12 hpBranch">
+<div class="col-lg-1" style="padding: 0;">
+<div class="bNumber">
+<i class="fas fa-map-marker"></i>
+<span class="skyBlueDot">1</span>
+</div>
+</div>
+<div class="col-lg-11 branchDetails">
+<span>Johannesburg Head Office</span>
+<div class="physAddress">
+<b>Physical Address: </b>Cnr Pretoria Main Road and Beatty Road, Waterfall District, Woodmead, South Africa
+</div>
+<div>
+<span><i class="fas fa-phone fa-flip-horizontal"></i>+27 11 457 9900</span>
+<span><i class="fas fa-envelope"></i><a href="mailto:info@amrod.co.za">info@amrod.co.za</a></span>
+<span><i class="fas fa-compass"></i><a href="https://goo.gl/maps/Qg979AJTdKu" target="_blank">-26.051232, 28.098232</a></span>
+</div>
+</div>
+</div>
+
+<div class="col-lg-12 hpBranch">
+<div class="col-lg-1" style="padding: 0;">
+<div class="bNumber">
+<i class="fas fa-map-marker"></i>
+<span class="pinkDot">3</span>
+</div>
+</div>
+<div class="col-lg-11 branchDetails">
+<span>Cape Town</span>
+<div class="physAddress">
+<b>Physical Address: </b>28 Marine Dr, Paarden Eiland, Cape Town, 7405, South Africa
+</div>
+<div>
+<span><i class="fas fa-phone fa-flip-horizontal"></i>+27 21 927 5300</span>
+<span><i class="fas fa-envelope"></i><a href="mailto:capetown@amrod.co.za">capetown@amrod.co.za</a></span>
+<span><i class="fas fa-compass"></i><a href="https://goo.gl/maps/L1FVTtyY9bXsViZV7" target="_blank">33°54'43.0"S 18°28'08.7"E</a></span>
+</div>
+</div>
+</div>
+
+<div class="col-lg-12 hpBranch">
+<div class="col-lg-1" style="padding: 0;">
+<div class="bNumber">
+<i class="fas fa-map-marker"></i>
+<span class="orangeDot">5</span>
+</div>
+</div>
+<div class="col-lg-11 branchDetails">
+<span>Bloemfontein</span>
+<div class="physAddress">
+<b>Physical Address: </b>Unit 5, Monument Business Park, 50 Monument Road, Oranjesig, Bloemfontein, South Africa
+</div>
+<div>
+<span><i class="fas fa-phone fa-flip-horizontal"></i>+27 51 140 8880</span>
+<span><i class="fas fa-envelope"></i><a href="mailto:bloemfontein@amrod.co.za">bloemfontein@amrod.co.za</a></span>
+<span><i class="fas fa-compass"></i><a href="https://goo.gl/maps/mWM3h3V92jJ2" target="_blank">29°08'24.7"S 26°12'46.1"E</a></span>
+</div>
+</div>
+</div>
+
+<div class="col-lg-12 hpBranch">
+<div class="col-lg-1" style="padding: 0;">
+<div class="bNumber">
+<i class="fas fa-map-marker"></i>
+<span class="navyDot">8</span>
+</div>
+</div>
+<div class="col-lg-11 branchDetails">
+<span>Kenya</span>
+<div class="physAddress">
+<b>Physical Address: </b>Rhapta Heights, St Michael Road, Nairobi, Kenya
+</div>
+<div>
+<span><i class="fas fa-phone fa-flip-horizontal"></i>+254 741 446605</span>
+<span><i class="fas fa-envelope"></i><a href="mailto:kenya@amrod.co.za">kenya@amrod.co.za</a></span>
+<span><i class="fas fa-compass"></i><a href="https://goo.gl/maps/W6xXj68GcZK2" target="_blank">22°34'29.8"S 17°04'34.1"E</a></span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3" style="width: 27%;">
+
+<div class="col-lg-12 hpBranch">
+<div class="col-lg-1" style="padding: 0;">
+<div class="bNumber">
+<i class="fas fa-map-marker"></i>
+<span class="greenDot">2</span>
+</div>
+</div>
+<div class="col-lg-11 branchDetails">
+<span>Port Elizabeth</span>
+ <div class="physAddress">
+<b>Physical Address: </b>No. 1 Fairview Industrial Park, 3 Leadwood Avenue, Fairview, Port Elizabeth, South Africa
+</div>
+<div>
+<span><i class="fas fa-phone fa-flip-horizontal"></i>+27 41 030 7000</span>
+<span><i class="fas fa-envelope"></i><a href="mailto:pe@amrod.co.za">pe@amrod.co.za</a></span>
+<span><i class="fas fa-compass"></i><a href="https://goo.gl/maps/3vmM3PbEqn52" target="_blank">22°34'29.8"S 17°04'34.1"E</a></span>
+</div>
+</div>
+</div>
+
+<div class="col-lg-12 hpBranch">
+<div class="col-lg-1" style="padding: 0;">
+<div class="bNumber">
+<i class="fas fa-map-marker"></i>
+<span class="bluePurpleDot">4</span>
+</div>
+</div>
+<div class="col-lg-11 branchDetails">
+<span>Durban</span>
+<div class="physAddress">
+<b>Physical Address: </b>Unit 2, Thynk Retail Park, 23 Riverhorse Road, Riverhorse Valley Estate, Durban, South Africa
+</div>
+<div>
+<span><i class="fas fa-phone fa-flip-horizontal"></i>+27 31 534 6760</span>
+<span><i class="fas fa-envelope"></i><a href="mailto:durban@amrod.co.za">durban@amrod.co.za</a></span>
+<span><i class="fas fa-compass"></i><a href="https://goo.gl/maps/jERj1vE4UKH2" target="_blank">-29° 46' 45.07", +30° 59' 33.14"</a></span>
+</div>
+</div>
+</div>
+
+<div class="col-lg-12 hpBranch">
+<div class="col-lg-1" style="padding: 0;">
+<div class="bNumber">
+<i class="fas fa-map-marker"></i>
+<span class="redDot">6</span>
+</div>
+</div>
+<div class="col-lg-11 branchDetails">
+<span>Botswana</span>
+<div class="physAddress">
+<b>Physical Address: </b>Unit 2 Plot 22148, Nyamambisi Road, Gaborone West Industrial Site, Gaborone, Botswana
+</div>
+<div>
+<span><i class="fas fa-phone fa-flip-horizontal"></i>+267 311 0549</span>
+<span><i class="fas fa-envelope"></i><a href="mailto:botswana@amrod.co.za">botswana@amrod.co.za</a></span>
+<span><i class="fas fa-compass"></i><a href="https://goo.gl/maps/N7Wnc411y9k" target="_blank">24°41'12.6"S 25°53'08.1"E</a></span>
+</div>
+</div>
+</div>
+
+<div class="col-lg-12 hpBranch">
+<div class="col-lg-1" style="padding: 0;">
+<div class="bNumber">
+<i class="fas fa-map-marker"></i>
+<span class="darkGreenDot">9</span>
+</div>
+</div>
+<div class="col-lg-11 branchDetails">
+<span>Zambia</span>
+<div class="physAddress">
+<b>Physical Address: </b>Amrod Gifts Zambia Limited, 2337 Kabelenga Road, Oakhill Business Park, Lusaka, Zambia
+</div>
+<div>
+<span><i class="fas fa-phone fa-flip-horizontal"></i>+260 21 1221026</span>
+<span><i class="fas fa-envelope"></i><a href="mailto:zambia@amrod.co.zm">zambia@amrod.co.zm</a></span>
+<span><i class="fas fa-compass"></i><a href="https://goo.gl/maps/Fr57aJacnrm" target="_blank">15°24'40.7"S 28°17'09.4"E</a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="register"></div>
+</div>
+</section>
+
+<section class="registerShape">
+<div class="container hpContainer">
+<div class="row">
+<h3 class="text-center">How to Register</h3>
+<div class="text-center">
+<p>
+You can either submit the required information on our website or e-mail it through to registrations@amrod.co.za. Once received, your application will be vetted to ensure that the core function of your business is the resale of promotional gifts and/or clothing.
+<br>
+<br>
+ For a list of requirements and full details on our registration process, view our <a href="https://www.amrod.co.za/Register.aspx">Registration page</a>.
+</p>
+<div class="text-center">
+<p class="center-col"><a href="https://www.amrod.co.za/Register.aspx" class="registerHere">REGISTER HERE</a></p>
+</div>
+</div>
+</div>
+<div class="row">
+</div>
+</div>
+<div class="curveContainer">
+<div class="curve"></div>
+</div>
+</section>
+
+<div id="divWait" class="PopupMessage" style="display: none;">
+<div style="text-align: center">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/spinner.gif" alt="Loading, please wait" title="Content is loading">
+</div>
+<div style="text-align: center">
+Please wait while we complete your request...
+<br>
+</div>
+</div>
+<div class="modal fade" id="ConfirmCartClear" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-default">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+</div>
+<div class="modal-body">
+<p>Are you sure you want to clear your cart?</p>
+</div>
+<div class="modal-footer">
+<a href="javascript:void(0)" class="btn btn-inline blue" data-dismiss="modal">Cancel</a>
+<a id="lnkConfirmCartClear" href="javascript:void(0)" class="btn btn-inline blue">Yes</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer id="masterFooter" role="contentinfo" class="homepageFooter">
+<div class="footer-top">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-md-3 footer-brand-wrap">
+<div class="footer-brand">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/amrod-logo_2.png" alt="Amrod Corporate">
+<small class="brand-title-a">A Trade Only Supplier</small>
+</div>
+</div>
+<span class="footer-link-list-title visble-xs hidden-sm hidden-md hidden-lg">Quick Links:</span>
+<div class="col-xs-6 col-sm-4 col-md-3 footer-link-list-xs-wrap">
+<span class="footer-link-list-title hidden-xs">AMROD</span>
+<ul class="footer-link-list">
+<li><a href="https://www.amrod.co.za/Compliments.aspx">What our clients say about us</a></li>
+<li><a href="https://www.amrod.co.za/Careers.aspx">Careers @Amrod</a></li>
+</ul>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-4" style="padding-left: 60px;">
+<span class="footer-link-list-title hidden-xs">SUPPORT</span>
+<ul class="footer-link-list">
+<li><a href="https://www.amrod.co.za/HaveYourSay.aspx">Send Us a Message</a></li>
+<li><a href="https://www.amrod.co.za/Contact.aspx">Contact details</a></li>
+</ul>
+</div>
+<div class="col-md-2">
+<span class="footer-link-list-title hidden-xs">FOLLOW ALONG</span>
+<ul class="footer-link-list">
+<li class="followAlong">
+<a target="_blank" href="https://linkedin.com/company/amrod"><i class="fab fa-linkedin"></i></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-9">
+<hr class="hidden-xs">
+</div>
+</div>
+<div class="row footerNote">
+<div class="col-md-3"></div>
+<div class="col-md-7">
+<p>NOTE: Amrod has made every effort to ensure this information is accurate and compliant with the web site and printed literature, however, if you notice any errors, omissions or have any questions, please email us at <a href="mailto:website@amrod.co.za">website@amrod.co.za</a></p>
+</div>
+<div class="col-md-2 hpL24-working">
+<div class="text-center">
+<a href="mailto:website@amrod.co.za">REPORT AN ISSUE</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<small id="siteBy" class="hidden-xs">©Amrod | 2023</small>
+<small class="footerTerms">
+<a href="https://www.amrod.co.za/Terms.aspx">Terms &amp; Conditions</a>
+<a href="https://www.amrod.co.za/Terms_Bloem_n_PE.aspx">Bloem and PE Terms &amp; Conditions</a>
+<a href="https://www.amrod.co.za/Terms_Namibia.aspx">Namibia Terms &amp; Conditions</a>
+<a href="https://www.amrod.co.za/Privacy.aspx">Privacy Policy</a>
+<a target="_blank" href="https://d33yj9nw58rehz.cloudfront.net/Downloads/PAIA-Guide-Act2-2000/PAIA-Manual-Revised%20V2.1.2%2020.09.2021.pdf">PAIA Policy</a>
+<a href="https://www.amrod.co.za/POPIARequests.aspx">POPIA Requests</a>
+<a href="https://www.amrod.co.za/CookiePolicy.aspx">Cookie Policy</a>
+</small>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div id="pnlChatButton" class="livechat_button chat-button" data-id="TVfP4ixhCNg"><a href="https://www.amrod.co.za/#"><img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/saved_resource" alt="
+Chat
+" title="
+Chat
+"></a></div>
+<script type="text/javascript">
+//<![CDATA[
+window.__lc = window.__lc || {}; window.__lc.license = 8428721; window.__lc.params = [{ name: 'Account Name', value: 'BigMinds' },{ name: 'Account Number', value: '023385' },{ name: 'Email', value: 'itumeles1@gmail.com' },{ name: 'Customer Name', value: 'itumeles .' },{ name: 'Status', value: 'Jade' }]; (function () {     var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;     lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);})();//]]>
+</script>
+</form>
+<script src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/vendor.bundle38.min.js" type="text/javascript"></script>
+<script src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/home2.min.js" type="text/javascript"></script>
+<div class="modal" id="otherMessageDialog" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-default">
+<div class="modal-content">
+<div class="modal-header">
+</div>
+<div class="modal-body">
+<p><span id="lblOtherMessageText"></span></p>
+</div>
+<div class="modal-footer">
+<a id="btnMainAlertOk" href="javascript:void(0)" class="btn btn-inline blue" data-dismiss="modal">OK</a>
+<span id="Alertspinner" style="display: none;">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/spinner.gif" alt="Loading, please wait" title="Content is loading">
+<br>
+Please wait...</span>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="freeBrandingDialog" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-default">
+<div class="modal-content">
+<div class="modal-header"></div>
+<div class="modal-body">
+<div style="margin: 10px 0px;"><b>Please note this product includes free branding with the following special:</b></div>
+<img id="imgFreeBrandingPopUp" style="max-width: 100%;">
+</div>
+<div class="modal-footer">
+<a id="freeBrandDialogOk" href="javascript:void(0)" class="btn btn-inline blue">OK</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modal" id="modalGlobalLoading" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-default">
+<div class="modal-content">
+<div class="modal-header"></div>
+<div class="modal-body cartLoadingBody">
+<p><span>Loading, please wait</span></p>
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/spinner.gif">
+</div>
+<div class="modal-footer"></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7825631-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        $(function () {
+
+            $.ajax({
+                url: 'AjaxHandler.aspx?a=GetCounterPaymentTime',
+                success: function (data, statusText, XHR) {
+                    if (statusText == "success") {
+                        if (data != null) {
+                            if (data.Success) {
+
+                                if (data.TheData[0] != "") {
+                                    $('#clock').countdown(data.TheData[0], function (event) {
+                                        $(this).html(event.strftime('%M:%S'));
+                                    });
+
+                                    $('#OrderSONumber').html(data.TheData[1]);
+                                    $('#lnkMakePaymentNow').attr('href', 'Payment.aspx?cartType=' + data.TheData[2]);
+                                    $('#timeLeftCounter').show();
+                                }
+                                else {
+                                    $('#timeLeftCounter').hide();
+                                }
+                            }
+                            else {
+                                alert('GetCounterPaymentTime: data.Success is false. ' + data.Error);
+                                $('#timeLeftCounter').hide();
+                            }
+                        }
+                    }
+                },
+                error: function (data, statusText, XHR) {
+                    $('#timeLeftCounter').hide();
+                    if (data.Error != null)
+                        alert('GetCounterPaymentTime: ' + data.Error);
+                },
+                dataType: 'json',
+                cache: false
+            });
+
+            $('.mPriceSearch').keypress(function (e) {
+                if (e.which == 46 || e.which == 44) {
+                    alert('Please note decimal numbers are not supported.');
+                    e.preventDefault();
+                }
+            });
+
+            // Add smooth scrolling to all links
+            $("a", ".subNavlinks").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+            
+        });
+
+    </script>
+<link href="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/jquery.smartbanner.css" rel="stylesheet">
+<script src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/jquery.smartbanner.js" type="text/javascript"></script>
+<script type="text/javascript">
+      $(function() { $.smartbanner() } )
+    </script>
+<div class="modal" id="orderDelivery" tabindex="-1" role="dialog" aria-hidden="true">
+<form id="addressForm" data-toggle="validator" novalidate="novalidate" class="bv-form"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+<div class="modal-dialog modal-login">
+<div class="modal" id="loadAddressData" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-default">
+<div class="modal-content">
+<div class="modal-header"></div>
+<div class="modal-body cartLoadingBody">
+<p><span>Loading, please wait</span></p>
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/spinner.gif">
+</div>
+<div class="modal-footer"></div>
+</div>
+</div>
+</div>
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="if (!window.__cfRLUnblockHandlers) return false; deliveryAddressSelector.closePopup()"><span aria-hidden="true">x</span></button>
+<h3 class="modal-title" id="OrderDeliveryHeading"><img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/delivery-logo.jpg"></h3>
+<h3 class="modal-title" id="ManageDeliveryHeading">Manage Delivery Addresses</h3>
+<span>Orders can be delivered to below addresses<br>
+All fields below are mandatory</span>
+</div>
+<div class="modal-body">
+<div class="confirmD">
+<div class="col-xs-12">
+<p>Are you sure you want to delete this address?</p>
+</div>
+<button type="button" class="btn btn-inline blue" onclick="if (!window.__cfRLUnblockHandlers) return false; deliveryAddressSelector.DismissDeletePopup()">Cancel</button>
+<button type="button" id="lnkConfirmDeleteAddress" class="btn btn-inline blue" onclick="if (!window.__cfRLUnblockHandlers) return false; deliveryAddressSelector.deleteAddress()">Yes</button>
+ </div>
+<div class="Formcontent">
+<input id="txtHiddedAddressID" type="hidden" name="txtHiddedAddressID">
+<div class="row">
+<div class="form-horizontal" style="float: left; width: 100%; margin: 0" id="divOrderDelivery">
+<div class="form-group" style="margin: 0">
+<span class="col-sm-4 control-label">From</span>
+<div class="col-sm-8">
+<label class="form-control" style="border: 0; text-align: left; padding-left: 0">Amrod JHB</label>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div id="divsendTo" class="form-horizontal" style="width: 100%; margin-bottom: -6px;">
+<div class="form-group">
+<div class="col-sm-4">
+<span class="control-label" id="spWordSelection" style="width: 100%; float: left"></span>
+</div>
+<div class="col-sm-6">
+<select id="ddlAddressSelect" class="form-control chosen-select text-left" onchange="if (!window.__cfRLUnblockHandlers) return false; deliveryAddressSelector.checkAddressSelection()" style="display: none;">
+</select><div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: 0px;" title="" id="ddlAddressSelect_chosen"><a class="chosen-single chosen-default" tabindex="-1"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chosen-results"></ul></div></div>
+</div>
+<div class="col-sm-2">
+<a class="btn btn-inline blue addressAccordion" onclick="if (!window.__cfRLUnblockHandlers) return false; deliveryAddressSelector.addressAccordionToggle()" style="display: inline-block; margin-left: -12px; padding: 0px 8px 0px; width: 138%; white-space: normal;">View Details</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div id="deliveryAddressForm" class="form-horizontal addressPanel" style="margin-bottom: 0px; float: left; width: 100%;">
+<div id="delAddressName" class="form-group">
+<span class="col-sm-4 control-label" style="">Address Name <span class="reqRed">*</span></span>
+<div class="col-sm-6">
+<input id="txtDeliveryAddressName" autocomplete="new-password" class="form-control" data-name="Address Name" placeholder="e.g.Threads are us - Cape Town Branch" name="DeliveryAddressName" data-bv-field="DeliveryAddressName">
+<small class="help-block" data-bv-validator="notEmpty" data-bv-for="DeliveryAddressName" data-bv-result="NOT_VALIDATED" style="display: none;">This is a required field</small></div>
+</div>
+<div class="form-group " id="divCompanyName">
+<span class="col-sm-4 control-label" style="">Company Name <span class="reqRed">*</span></span>
+<div class="col-sm-6">
+<input id="txtDeliveryCompanyName" autocomplete="new-password" class="form-control LimitCharacters" data-name="Company Name" placeholder="e.g.Threads are us" name="DeliveryCompanyName" maxlength="40" data-bv-field="DeliveryCompanyName">
+<span class="LimitCharacterMsg">You can only enter 40 characters.</span>
+<small class="help-block" data-bv-validator="stringLength" data-bv-for="DeliveryCompanyName" data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a value with valid length</small></div>
+</div>
+<div class="form-group " id="divContactName">
+<span class="col-sm-4 control-label" autocomplete="new-password" style="">Recipient First Name, Surname <span class="reqRed">*</span></span>
+<div class="col-sm-6">
+<input id="txtDeliveryContactName" class="form-control" data-name="Recipient First Name, Surname" placeholder="e.g. John Doe" name="DeliveryContactName" data-bv-field="DeliveryContactName">
+<small class="help-block" data-bv-validator="notEmpty" data-bv-for="DeliveryContactName" data-bv-result="NOT_VALIDATED" style="display: none;">This is a required field</small></div>
+</div>
+<div class="form-group " id="divContactNumber">
+<span class="col-sm-4 control-label" style="">Recipient Contact Number <span class="reqRed">*</span></span>
+<div class="col-sm-6">
+<input type="tel" id="txtContactNumber" autocomplete="new-password" class="form-control" data-name="Recipient Contact Number" placeholder="e.g. 021 123 4568" name="ContactNumber" data-bv-field="ContactNumber">
+<small class="help-block" data-bv-validator="notEmpty" data-bv-for="ContactNumber" data-bv-result="NOT_VALIDATED" style="display: none;">This is a required field</small><small class="help-block" data-bv-validator="regexp" data-bv-for="ContactNumber" data-bv-result="NOT_VALIDATED" style="display: none;">Invalid characters</small></div>
+</div>
+<div class="form-group ">
+<span class="col-sm-4 control-label" style="">Street Address <span class="reqRed">*</span></span>
+<div class="col-sm-6">
+<input id="txtDeliveryAddress1" autocomplete="new-password" class="form-control LimitCharacters" data-name="Street Address" placeholder="e.g. 32 Gold Street" name="DeliveryAddress1" maxlength="40" data-bv-field="DeliveryAddress1">
+<span class="LimitCharacterMsg">You can only enter 40 characters.</span>
+<small class="help-block" data-bv-validator="notEmpty" data-bv-for="DeliveryAddress1" data-bv-result="NOT_VALIDATED" style="display: none;">This is a required field</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="DeliveryAddress1" data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a value with valid length</small></div>
+</div>
+<div class="form-group ">
+<span class="col-sm-4 control-label" style="">Office Park / Complex </span>
+<div class="col-sm-6">
+<input id="txtOfficePark" autocomplete="new-password" class="form-control LimitCharacters" data-name="Office Park / Complex" placeholder="e.g. Northgate Estate" name="OfficePark" maxlength="40" data-bv-field="OfficePark">
+<span class="LimitCharacterMsg">You can only enter 40 characters.</span>
+<small class="help-block" data-bv-validator="stringLength" data-bv-for="OfficePark" data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a value with valid length</small></div>
+</div>
+<div class="form-group " id="divSuburbCode">
+<span class="col-sm-4 control-label" style="">Suburb<span class="reqRed">*</span></span>
+<div class="col-sm-6">
+<input id="txtSuburbCode" autocomplete="new-password" class="form-control" data-name="Suburb" placeholder="e.g. Brooklyn" name="SuburbCode" data-bv-field="SuburbCode">
+<small class="help-block" data-bv-validator="notEmpty" data-bv-for="SuburbCode" data-bv-result="NOT_VALIDATED" style="display: none;">This is a required field</small></div>
+</div>
+<div class="form-group " id="divCity">
+<span class="col-sm-4 control-label" style="">City <span class="reqRed">*</span></span>
+<div class="col-sm-6">
+<input id="txtDeliveryCity" autocomplete="new-password" class="form-control" data-name="City" placeholder="e.g. Cape Town" name="DeliveryCity" data-bv-field="DeliveryCity">
+<small class="help-block" data-bv-validator="notEmpty" data-bv-for="DeliveryCity" data-bv-result="NOT_VALIDATED" style="display: none;">This is a required field</small></div>
+</div>
+<div class="form-group " id="divDeliveryProvince">
+<span class="col-sm-4 control-label" style="">Province<span class="reqRed">*</span></span>
+<div class="col-sm-6">
+<input id="txtDeliveryProvince" autocomplete="new-password" class="form-control" data-name="Province" placeholder="e.g. Western Cape" name="DeliveryProvince" data-bv-field="DeliveryProvince">
+<small class="help-block" data-bv-validator="notEmpty" data-bv-for="DeliveryProvince" data-bv-result="NOT_VALIDATED" style="display: none;">This is a required field</small></div>
+</div>
+<div class="form-group " id="divDeliveryPostalCode">
+<span class="col-sm-4 control-label" style="">Postal Code <span class="reqRed">*</span></span>
+<div class="col-sm-6">
+<input id="txtDeliveryPostalCode" autocomplete="new-password" class="form-control" data-name="Postal Code" placeholder="e.g.7405" name="DeliveryPostalCode" onblur="if (!window.__cfRLUnblockHandlers) return false; deliveryAddressSelector.ValidateOnblur()" data-bv-field="DeliveryPostalCode">
+<small class="help-block" data-bv-validator="notEmpty" data-bv-for="DeliveryPostalCode" data-bv-result="NOT_VALIDATED" style="display: none;">This is a required field</small><small class="help-block" data-bv-validator="callback" data-bv-for="DeliveryPostalCode" data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a valid value</small></div>
+</div>
+<div class="form-group ">
+<span class="col-sm-4 control-label" style="">Country<span class="reqRed">*</span></span>
+<div class="col-sm-6">
+<input id="txtCountry" autocomplete="new-password" class="form-control" name="Country" data-name="Country" value="South Africa" disabled="disabled">
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div id="delDefaultField" class="form-horizontal" style="width: 100%; float: left;">
+<div class="form-group">
+<span class="col-sm-4 control-label">Make This My Default Address</span>
+<div class="col-sm-6">
+<select class="form-control chosen-select" id="defaultAddress" style="display: none;">
+</select><div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: 0px;" title="" id="defaultAddress_chosen"><a class="chosen-single chosen-default" tabindex="-1"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chosen-results"></ul></div></div>
+</div>
+</div>
+<div class="form-group">
+<span class="col-sm-4 control-label">End User Delivery Address <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="right" data-original-title="By ticking this field, no prices will be reflected when delivering to your client."></i></span>
+<div class="col-sm-6" style="padding-top: 10px; text-align: left;">
+<input type="checkbox" id="chkEndUserDelivery">
+</div>
+</div>
+</div>
+</div>
+<div class="row" style="display:none">
+<div class="delPriceAndALP">
+For as little as <span id="spPrice">
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/spinner2.gif"></span> and receive <b>5 000 ALP</b> points for your first delivery,
+<br>
+and <b>500 points</b> for deliveries thereafter.
+</div>
+</div>
+<div class="row">
+<div id="delAddressButtons" class="deliverAddressButtons">
+<div>
+<a href="javascript:void(0);" id="linkButtonAddress" onclick="if (!window.__cfRLUnblockHandlers) return false; deliveryAddressSelector.ValidateInputs()" class="btn btn-inline blue" style="width: 155px">Use this Address</a>
+<a href="https://www.amrod.co.za/#" data-dismiss="modal" class="btn btn-inline blue">No Thanks</a>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="deliverAddressButtons" id="btnManageAddress" style="float: left; width: 100%;">
+<div class="col-sm-4"></div>
+<div class="col-sm-8 text-left">
+<button type="button" id="btnSaveUpdate" onclick="if (!window.__cfRLUnblockHandlers) return false; deliveryAddressSelector.ValidateInputs()" class="btn btn-inline blue">Update</button>
+<button type="button" onclick="if (!window.__cfRLUnblockHandlers) return false; deliveryAddressSelector.ConfirmDeleteAddress()" id="btnDelete" class="btn btn-inline red">Delete</button>
+<button type="button" data-dismiss="modal" class="btn btn-inline blue" onclick="if (!window.__cfRLUnblockHandlers) return false; deliveryAddressSelector.closePopup()">Cancel</button>
+</div>
+</div>
+</div>
+<div class="row">
+<div id="selectOptionToUse">
+<h3 class="modal-title">Select Option To Use</h3>
+<table id="deliveryOptionsTable" class="table data-table striped-rows dt-responsive dash-table">
+<thead>
+<tr>
+<th>Service</th>
+<th>Delivery from Amrod dispatch (Days) </th>
+<th>Total Cost (excl. VAT)</th>
+</tr>
+</thead>
+<tbody style="color: #26bff1; text-decoration: underline;"></tbody>
+</table>
+<div class="termAndConditions">
+<a target="_blank" href="https://www.amrod.co.za/terms.aspx#DeliveryTerms">View Delivery Terms &amp; Conditions</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="FormcontentLoader">
+<p><span>Loading, please wait</span></p>
+<img src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/spinner.gif">
+</div>
+</div>
+</div>
+</form>
+</div>
+<style>
+        #orderDelivery .modal-login .chosen-container-single .chosen-drop {
+            min-width: 224px !important;
+        }
+
+        #orderDelivery .red, .bootbox .btn-primary {
+            background-color: #f50834 !important;
+        }
+
+        .form-horizontal .chosen-container-single .chosen-single span, .form-horizontal .chosen-container .chosen-results li {
+            font-size: 14px !important;
+        }
+
+        .confirmD {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.84);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            padding: 60% 0;
+            display: none;
+        }
+
+        tdAlign {
+            text-align: center !important;
+        }
+        .LimitCharacterMsg{
+            color:red;
+            display:none;
+        }
+    </style>
+<script src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/bootstrap.validator.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#deliveryAddressForm input.form-control").blur(function () {
+            var $this = $(this);
+
+            var duplicates = validateDuplicates($this);
+            if (duplicates !== "") {
+                $(this).closest(".form-group").addClass("has-error");
+                alertMessage('The address details supplied are invalid. The following field(s) ' + $this.attr("data-name") + ',' + duplicates + ' have been duplicated.');
+                $('#btnSaveUpdate').attr("disabled", true);
+            }
+        });
+
+        $("#deliveryAddressForm input.form-control").focus(function () {
+            $(this).closest(".form-group").removeClass("has-error");
+            $('#btnSaveUpdate').removeAttr("disabled");
+        });
+
+        $(".LimitCharacters").keypress(function () {
+            if ($(this).val().length>=40) {
+                $(this).next().fadeIn();
+                setTimeout(function () {
+                    $(".LimitCharacters").next().fadeOut();
+                }, 3000);
+            }
+        });
+
+    });
+    function ValidateIt() {
+        $(document).ready(function () {
+            $('#addressForm').bootstrapValidator({
+                fields: {
+                    DeliveryAddressName: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This is a required field',
+
+                            }
+                        }
+                    },
+                    DeliveryContactName: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This is a required field',
+                            }
+                        }
+                    },
+                    CompanyName: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This is a required field',
+                            }
+                        }
+                    },
+                    ContactNumber: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This is a required field',
+                            },
+                            regexp: {
+                                regexp: /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}[ ]?$/,
+                                message: 'Invalid characters'
+                            }
+                        }
+                    },
+                    DeliveryAddress1: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This is a required field',
+                            }
+                        }
+                    },
+                    SuburbCode: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This is a required field',
+                            }
+                        }
+                    },
+                    DeliveryCity: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This is a required field',
+                            }
+                        }
+                    },
+                    DeliveryProvince: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This is a required field',
+                            }
+                        }
+                    },
+                    DeliveryPostalCode: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This is a required field',
+                            },
+                            callback: {
+                                callback: function (value, validator, $field) {
+                                    $('#txtDeliveryPostalCode').val(value.trim());
+                                    return true;
+                                }
+                            }
+                        }
+                    },
+                    //Country: {
+                    //    validators: {
+                    //        notEmpty: {
+                    //            message: 'This is a required field',
+                    //        }
+                    //    }
+                    //}
+                }
+            });
+        });
+    }
+
+    function validateDuplicates(val) {
+        var $this = val;
+        var status = "";
+
+        if ($this.attr("id") !== "txtDeliveryAddressName") {
+            if ($this.attr("id") !== "txtDeliveryCompanyName") {
+                $("#deliveryAddressForm input.form-control:not([name='" + $this.attr("name") + "'])").each(function () {
+
+                    if ($this.val().toLowerCase() === $(this).val().toLowerCase()) {
+                        $(this).closest(".form-group").addClass("has-error");
+                        $(this).removeAttr("style");
+                        status = $(this).attr("data-name");
+                    }
+                    //else if ($this.val() == $(this).val()) {
+                    //    $(this).closest(".form-group").removeClass("has-error");
+                    //}                      
+                });
+            }
+        }
+        $("#txtOfficePark").closest(".form-group").removeClass("has-error");
+        $("#txtSuburbCode").closest(".form-group").removeClass("has-error");
+        $("#txtDeliveryCity").closest(".form-group").removeClass("has-error");
+        if ($this.attr("id") == "txtOfficePark")
+             status = "";
+        if (status == "Office Park / Complex" || status=="City" || status=="Suburb")
+            status = "";
+
+        return status;
+    }
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSaveUpdate").click(function () {
+            $('#addressForm').bootstrapValidator('validate');
+        });
+        ValidateIt();
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#linkButtonAddress").click(function () {
+            $('#addressForm').bootstrapValidator('validate');
+        });
+        ValidateIt();
+    });
+</script>
+<script defer="" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon="{&quot;rayId&quot;:&quot;7e1afefdeb309cd2&quot;,&quot;token&quot;:&quot;50ecfa1fcb5e482d82e64b964102beb3&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+<scribe-shadow id="crxjs-ext" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible;"><template shadowrootmode="open"><div id="root-scribe-elem" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; overflow: visible; color: rgb(15, 23, 42);"></div><link rel="stylesheet" href="chrome-extension://okfkdaglfjjjfefdcppliegebpoegaii/assets/style.css"></template></scribe-shadow><div id="speechify-global-notifications"><template shadowrootmode="open"><div id="speechify-global-notifications-root" style="position: fixed; top: 0px; left: 0px; height: 100vh; z-index: 2147483644; width: 0vw;"></div></template></div><div id="speechify-summarization-fullscreen-mode" style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none;"><template shadowrootmode="open"><div id="speechify-summarization-fullscreen-mode-root" style="margin: 0px 33%;"></div></template></div><div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 2147483640; display: none;"><template shadowrootmode="open"><div id="speechify-screenshot-mode-root" style="width: 100%; height: 100%; position: relative;"></div></template></div><div id="speechify-shortcuts-prompt"><template shadowrootmode="open"><div id="speechify-shortcuts-prompt-root"><div class="shortcuts-prompt-emotion-cache-16fjncj" style="left: 26px; bottom: 26px; cursor: grab;"><button class="shortcuts-prompt-emotion-cache-1fa8hsk"><div class="shortcuts-prompt-emotion-cache-1jsfxsv">⌥Q</div><div class="shortcuts-prompt-emotion-cache-1w8vswj"><svg width="34" height="19" viewBox="0 0 34 19" xmlns="http://www.w3.org/2000/svg" class="shortcuts-prompt-emotion-cache-136jy6k"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.13085 6.43475L7.97166 5.34716C8.35281 4.85414 8.97964 4.6224 9.58737 4.74983C10.0579 4.84849 10.3599 5.31228 10.2618 5.78572C10.2537 5.8249 10.2429 5.86348 10.2296 5.90119C9.53109 7.87216 9.30873 9.17396 9.5625 9.80659C10.6072 8.55759 15.9444 0.413118 17.6313 0.0265105C18.1945 -0.102562 18.755 0.252173 18.8833 0.818834C18.9267 1.01055 18.9159 1.21067 18.852 1.3965C17.2581 6.03365 16.5832 8.8376 16.8275 9.80836C17.6693 8.61652 18.9197 7.01242 20.5787 4.99605C21.2018 4.23866 22.1959 3.89924 23.1485 4.11866C23.9861 4.31161 24.5097 5.15124 24.3179 5.99404C24.3166 5.99958 24.3154 6.00511 24.3141 6.01064C23.7368 8.42634 23.5228 9.83969 23.6722 10.2507C23.738 10.2002 23.8048 10.1485 23.8728 10.0954C24.6337 9.50119 25.5864 9.21161 26.547 9.28254L34 9.83284L29.0621 10.3978C27.6835 10.5555 26.421 11.2496 25.5442 12.3316L24.3626 13.7898C23.9757 14.2672 23.3813 14.5242 22.7708 14.478C22.1644 14.432 21.663 13.9844 21.5455 13.384C21.2568 11.9092 21.2106 10.1684 21.4069 8.16161C19.9241 10.3907 18.6376 13.5967 17.5473 17.7793C17.3599 18.4985 16.7139 19 15.975 19C15.2693 19 14.6913 18.436 14.6696 17.7263L14.3429 7.03113L11.1828 13.2973C10.8539 13.9494 10.1302 14.2974 9.41932 14.1453C8.6662 13.9841 8.04316 13.4545 7.75942 12.7343L7.40531 11.8354C6.90425 10.5636 5.77337 9.65224 4.43045 9.438C2.95363 9.2024 1.47681 8.96681 0 8.73121L3.28955 8.4971C4.80287 8.3894 6.19938 7.63963 7.13085 6.43475Z"></path></svg></div></button></div><style data-emotion="shortcuts-prompt-emotion-cache" data-s="">.shortcuts-prompt-emotion-cache-16fjncj{cursor:-webkit-grab;cursor:grab;position:fixed;z-index:999999999;border:6px solid transparent;opacity:0.2;-webkit-transition:opacity 0.2s ease-in-out;transition:opacity 0.2s ease-in-out;}</style><style data-emotion="shortcuts-prompt-emotion-cache" data-s="">.shortcuts-prompt-emotion-cache-16fjncj:hover{opacity:1;}</style><style data-emotion="shortcuts-prompt-emotion-cache" data-s="">.shortcuts-prompt-emotion-cache-1fa8hsk{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:6px;background:#14202E;border-radius:8px;font-family:ABCDiatype;color:#FFFFFF;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</style><style data-emotion="shortcuts-prompt-emotion-cache" data-s="">.shortcuts-prompt-emotion-cache-1fa8hsk >*+*{margin-left:8px;}</style><style data-emotion="shortcuts-prompt-emotion-cache" data-s="">.shortcuts-prompt-emotion-cache-1jsfxsv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:22px;line-height:24px;}</style><style data-emotion="shortcuts-prompt-emotion-cache" data-s="">.shortcuts-prompt-emotion-cache-1w8vswj{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;width:24px;height:24px;background-color:#2137FC;border-radius:32px;}</style><style data-emotion="shortcuts-prompt-emotion-cache" data-s="">.shortcuts-prompt-emotion-cache-1w8vswj:hover{background-color:#6B78FC;}</style><style data-emotion="shortcuts-prompt-emotion-cache" data-s="">.shortcuts-prompt-emotion-cache-1w8vswj>svg{width:16px;}</style><style data-emotion="shortcuts-prompt-emotion-cache" data-s="">.shortcuts-prompt-emotion-cache-136jy6k{width:34;height:19;fill:currentColor;}</style></div></template></div><iframe id="_hjSafeContext_37959600" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/saved_resource(1).html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><div id="chat-widget-container" style="opacity: 0; visibility: hidden; z-index: -1; position: fixed; bottom: 0px; width: 281px; height: 63px; max-width: 100%; max-height: calc(100% - 0px); min-height: 0px; min-width: 0px; background-color: transparent; border: 0px; overflow: hidden; right: 0px; transition: none 0s ease 0s !important;"><iframe allow="autoplay; microphone *; camera *; display-capture *; picture-in-picture *; fullscreen *;" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/open_chat.html" allowtransparency="true" id="chat-widget" name="chat-widget" title="LiveChat chat widget" scrolling="no" style="width: 100%; height: 100%; min-height: 0px; min-width: 0px; margin: 0px; padding: 0px; background-image: none; background-position: 0% 0%; background-size: initial; background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0); border-width: 0px; float: none; color-scheme: normal; position: absolute; inset: 0px; transition: none 0s ease 0s !important; display: none;"></iframe><iframe allowtransparency="true" id="chat-widget-minimized" name="chat-widget-minimized" title="LiveChat chat widget" scrolling="no" style="width: 100%; height: 100%; min-height: 0px; min-width: 0px; margin: 0px; padding: 0px; background-image: none; background-position: 0% 0%; background-size: initial; background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0); border-width: 0px; float: none; color-scheme: normal; display: block;" src="./Corporate Gifts _ Clothing _ Promotional Items Trade Only Supplier_files/saved_resource(2).html"></iframe></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
